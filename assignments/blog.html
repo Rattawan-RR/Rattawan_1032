@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 3: Tech & Design Blog - MDT312 Web Programming KMUTT">
+    <title>Modern Web Design Trends | MDT312 Blog Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="top-nav">
+            <a href="../index.html" class="nav-back">&larr; กลับสู่หน้า Portfolio (index.html)</a>
+            <span class="badge-assignment">MDT312 Assignment #3</span>
+        </header>
+
+        <div class="blog-layout">
+            <main class="main-article">
+                <article class="article-card">
+                    <header class="article-header">
+                        <div class="category-tags">
+                            <span class="cat-tag">Web Development</span>
+                            <span class="cat-tag">UI/UX Design</span>
+                        </div>
+                        <h1>ก้าวทันเทรนด์การพัฒนาเว็บและออกแบบ UI/UX สำหรับปี 2026</h1>
+                        <div class="article-meta">
+                            <span>ผู้เขียน: <strong>รัตตวัลย์</strong></span>
+                            <span>•</span>
+                            <span>วันที่: 9 ตุลาคม 2569</span>
+                            <span>•</span>
+                            <span>เวลาอ่าน: 5 นาที</span>
+                        </div>
+                    </header>
+
+                    <div class="article-body">
+                        <p class="lead-paragraph">
+                            การออกแบบและพัฒนาเว็บไซต์ในยุคปัจจุบันไม่ได้เน้นเพียงแค่ความสวยงามทางสายตาเท่านั้น แต่ให้ความสำคัญกับประสบการณ์ของผู้ใช้งาน (User Experience), การเข้าถึงได้ของทุกคน (Accessibility), และประสิทธิภาพความเร็วในการโหลดข้อมูล (Performance) เป็นหัวใจสำคัญ
+                        </p>
+
+                        <h2>1. Clean Architecture & Separation of Concerns</h2>
+                        <p>
+                            หลักการแยกโครงสร้าง HTML, การจัดสไตล์ด้วย External CSS, และการควบคุมพฤติกรรมผ่าน External JavaScript ยังคงเป็นมาตรฐานสากลที่จำเป็นอย่างยิ่ง ช่วยให้โค้ดสามารถดูแลรักษาได้ง่าย (Maintainability) และทำงานร่วมกันในทีมได้อย่างมีประสิทธิภาพ
+                        </p>
+
+                        <blockquote>
+                            "Great web design is not about how complex the code looks, but how effortlessly and seamlessly users can accomplish their goals."
+                        </blockquote>
+
+                        <h2>2. Responsive Design & Mobile-First Approach</h2>
+                        <p>
+                            ผู้ใช้งานมากกว่า 65% เข้าถึงเว็บไซต์ผ่านสมาร์ตโฟน การออกแบบต้องคำนึงถึงขนาดหน้าจอที่หลากหลาย การจัดวาง Grid, Flexbox, และการกำหนดขนาดแบบยืดหยุ่น (Fluid Typography) ช่วยให้เว็บไซต์แสดงผลได้สมบูรณ์แบบในทุกอุปกรณ์
+                        </p>
+
+                        <h2>3. Micro-Interactions & User Feedback</h2>
+                        <p>
+                            การตอบสนองต่อผู้ใช้งานด้วยแอนิเมชันขนาดเล็ก เช่น Hover Effect, กดปุ่มแล้วมีฟีดแบ็ก หรือ Toast แจ้งเตือน ล้วนช่วยเพิ่มความมีชีวิตชีวาและความมั่นใจให้แก่ผู้ใช้งานขณะโต้ตอบกับระบบ
+                        </p>
+                    </div>
+
+                    <footer class="author-bio">
+                        <div class="bio-avatar">R</div>
+                        <div class="bio-info">
+                            <h3>รัตตวัลย์ (Rattawan)</h3>
+                            <p>นักศึกษาหลักสูตรเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี มีความหลงใหลในการออกแบบ Front-End และสร้างสรรค์ Interactive Web Applications</p>
+                        </div>
+                    </footer>
+                </article>
+
+                <section class="comments-section">
+                    <h2>ความคิดเห็น (<span id="comment-count">2</span>)</h2>
+
+                    <div class="comment-list" id="comment-list">
+                        <div class="comment-item">
+                            <div class="comment-header">
+                                <span class="comment-author">Kejkaew Thanasuan</span>
+                                <span class="comment-time">1 ชั่วโมงที่แล้ว</span>
+                            </div>
+                            <p class="comment-text">บทความสรุปใจความสำคัญของ Front-End Development ได้ชัดเจนดีมากค่ะ</p>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-header">
+                                <span class="comment-author">Peer Student</span>
+                                <span class="comment-time">30 นาทีที่แล้ว</span>
+                            </div>
+                            <p class="comment-text">ชอบการเน้นเรื่อง Separation of Concerns นำไปปรับใช้กับการจัดไฟล์โปรเจกต์ได้ดีมากเลยครับ</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-form-box">
+                        <h3>แสดงความคิดเห็นของคุณ</h3>
+                        <form id="comment-form">
+                            <div class="form-group">
+                                <input type="text" id="author-input" placeholder="ชื่อของคุณ" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="comment-input" rows="3" placeholder="เขียนข้อความความคิดเห็น..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">ส่งความคิดเห็น</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>หมวดหมู่บทความ</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">Web Programming (5)</a></li>
+                        <li><a href="#">UI/UX Design (3)</a></li>
+                        <li><a href="#">Frontend Frameworks (4)</a></li>
+                        <li><a href="#">Media Technology (2)</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Assignment อื่นๆ ในห้องเรียน</h3>
+                    <ul class="widget-list">
+                        <li><a href="cinnamon-roll.html">&bull; Cinnamon Roll Wreath</a></li>
+                        <li><a href="pizza-dip.html">&bull; Pizza Dip</a></li>
+                        <li><a href="register-login.html">&bull; Register and Login</a></li>
+                        <li><a href="square-game.html">&bull; Square Game</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 รัตตวัลย์ (65070501032) • Media Technology KMUTT • MDT312 Assignment</p>
+        </footer>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+
+</html>

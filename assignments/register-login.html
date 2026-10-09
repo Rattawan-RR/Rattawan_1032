@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 4: Register and Login Form Validation - MDT312 Web Programming KMUTT">
+    <title>Register and Login | MDT312 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register-login.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="top-nav">
+            <a href="../index.html" class="nav-back">&larr; กลับสู่หน้า Portfolio (index.html)</a>
+            <span class="badge-assignment">MDT312 Assignment #4</span>
+        </header>
+
+        <main class="auth-wrapper">
+            <div class="auth-card">
+                <div class="auth-tabs">
+                    <button type="button" class="tab-btn active" id="tab-login-btn">เข้าสู่ระบบ (Login)</button>
+                    <button type="button" class="tab-btn" id="tab-register-btn">สมัครสมาชิก (Register)</button>
+                </div>
+
+                <!-- Alert Message Box -->
+                <div id="auth-alert" class="auth-alert hidden"></div>
+
+                <!-- Form: Login -->
+                <form id="form-login" class="auth-form active">
+                    <div class="form-header">
+                        <h2>ยินดีต้อนรับกลับมา</h2>
+                        <p>กรอกข้อมูลชื่อผู้ใช้และรหัสผ่านเพื่อเข้าสู่ระบบ</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="login-username">ชื่อผู้ใช้ (Username) หรือ อีเมล</label>
+                        <input type="text" id="login-username" placeholder="เช่น rattawan.rkr@gmail.com" required autocomplete="username">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="login-password">รหัสผ่าน (Password)</label>
+                        <div class="password-field">
+                            <input type="password" id="login-password" placeholder="กรอกรหัสผ่านของคุณ" required autocomplete="current-password">
+                            <button type="button" class="toggle-pw" data-target="login-password">แสดง</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember-check"> จดจำฉันไว้ในระบบ
+                        </label>
+                        <a href="#" class="forgot-link" id="link-forgot">ลืมรหัสผ่าน?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">เข้าสู่ระบบ</button>
+                </form>
+
+                <!-- Form: Register -->
+                <form id="form-register" class="auth-form hidden">
+                    <div class="form-header">
+                        <h2>สร้างบัญชีผู้ใช้ใหม่</h2>
+                        <p>กรอกข้อมูลเพื่อลงทะเบียนเข้าใช้งานระบบ</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-fullname">ชื่อ - นามสกุล</label>
+                        <input type="text" id="reg-fullname" placeholder="เช่น รัตตวัลย์ คำคง" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-username">ชื่อผู้ใช้ (Username)</label>
+                        <input type="text" id="reg-username" placeholder="ความยาวอย่างน้อย 4 ตัวอักษร" required autocomplete="username">
+                        <span class="field-hint" id="hint-username"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-email">อีเมล (Email)</label>
+                        <input type="email" id="reg-email" placeholder="example@mail.kmutt.ac.th" required autocomplete="email">
+                        <span class="field-hint" id="hint-email"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-password">รหัสผ่าน (Password)</label>
+                        <div class="password-field">
+                            <input type="password" id="reg-password" placeholder="อย่างน้อย 6 ตัวอักษร" required autocomplete="new-password">
+                            <button type="button" class="toggle-pw" data-target="reg-password">แสดง</button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-confirm">ยืนยันรหัสผ่าน (Confirm Password)</label>
+                        <div class="password-field">
+                            <input type="password" id="reg-confirm" placeholder="กรอกรหัสผ่านซ้ำอีกครั้ง" required autocomplete="new-password">
+                            <button type="button" class="toggle-pw" data-target="reg-confirm">แสดง</button>
+                        </div>
+                        <span class="field-hint" id="hint-confirm"></span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="terms-agree">
+                            <input type="checkbox" id="terms-check" required> ฉันยอมรับข้อกำหนดและเงื่อนไขการใช้งาน
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">ยืนยันการสมัครสมาชิก</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 รัตตวัลย์ (65070501032) • Media Technology KMUTT • MDT312 Assignment</p>
+        </footer>
+    </div>
+
+    <script src="register-login.js"></script>
+</body>
+
+</html>

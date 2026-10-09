@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', 'Plus Jakarta Sans', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    padding: 24px 16px;
+    user-select: none;
+}
+
+.page-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 12px 18px;
+    background: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.nav-back {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-back:hover {
+    text-decoration: underline;
+}
+
+.badge-assignment {
+    background-color: #0369a1;
+    color: #e0f2fe;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.game-card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.game-header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #38bdf8;
+    margin-bottom: 6px;
+}
+
+.game-header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.game-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-box {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.stat-num {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.stat-num.time {
+    color: #f59e0b;
+}
+
+.stat-num.score {
+    color: #10b981;
+}
+
+.stat-num.high {
+    color: #a855f7;
+}
+
+.game-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: #0f172a;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.btn-action {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-action.start {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+.btn-action.start:hover {
+    background: #0369a1;
+}
+
+.btn-action.reset {
+    background: #475569;
+    color: #ffffff;
+}
+
+.btn-action.reset:hover {
+    background: #334155;
+}
+
+.difficulty-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.difficulty-select select {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.game-arena {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: #090d16;
+    border-radius: 12px;
+    border: 2px dashed #334155;
+    overflow: hidden;
+}
+
+.arena-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+.arena-overlay.hidden {
+    display: none;
+}
+
+.arena-overlay h2 {
+    font-size: 20px;
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.arena-overlay p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.square-target {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease-out, opacity 0.15s;
+    animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.square-target:hover {
+    transform: scale(1.15);
+}
+
+.square-target:active {
+    transform: scale(0.85);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.page-footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 640px) {
+    .game-stats {
+        grid-template-columns: 1fr;
+    }
+    .game-arena {
+        height: 340px;
+    }
+}

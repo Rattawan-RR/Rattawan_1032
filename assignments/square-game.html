@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 5: Interactive Square Game - MDT312 Web Programming KMUTT">
+    <title>Square Game | MDT312 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="square-game.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="top-nav">
+            <a href="../index.html" class="nav-back">&larr; กลับสู่หน้า Portfolio (index.html)</a>
+            <span class="badge-assignment">MDT312 Assignment #5</span>
+        </header>
+
+        <main class="game-wrapper">
+            <div class="game-card">
+                <div class="game-header">
+                    <h1>Square Clicking Challenge</h1>
+                    <p>คลิกเก็บกล่องสี่เหลี่ยมสีสันต่างๆ ให้ได้มากที่สุดก่อนหมดเวลา 30 วินาที!</p>
+                </div>
+
+                <!-- Dashboard Stats -->
+                <div class="game-stats">
+                    <div class="stat-box">
+                        <span class="stat-label">เวลาที่เหลือ</span>
+                        <span id="time-val" class="stat-num time">30s</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">คะแนนปัจจุบัน</span>
+                        <span id="score-val" class="stat-num score">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">คะแนนสูงสุด</span>
+                        <span id="high-score-val" class="stat-num high">0</span>
+                    </div>
+                </div>
+
+                <!-- Game Controls -->
+                <div class="game-controls">
+                    <button type="button" id="btn-start" class="btn-action start">เริ่มเล่นเกม</button>
+                    <button type="button" id="btn-reset" class="btn-action reset">เริ่มใหม่</button>
+                    <div class="difficulty-select">
+                        <label for="square-num">จำนวนกล่องต่อรอบ:</label>
+                        <select id="square-num">
+                            <option value="5">5 กล่อง (ง่าย)</option>
+                            <option value="8" selected>8 กล่อง (ปานกลาง)</option>
+                            <option value="12">12 กล่อง (ท้าทาย)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Arena -->
+                <div id="game-arena" class="game-arena">
+                    <div id="arena-overlay" class="arena-overlay">
+                        <h2 id="overlay-title">กดปุ่ม "เริ่มเล่นเกม" เพื่อเริ่มประลองความไว!</h2>
+                        <p id="overlay-msg">คลิกที่กล่องสี่เหลี่ยมแต่ละอันเพื่อเก็บคะแนน</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 รัตตวัลย์ (65070501032) • Media Technology KMUTT • MDT312 Assignment</p>
+        </footer>
+    </div>
+
+    <script src="square-game.js"></script>
+</body>
+
+</html>

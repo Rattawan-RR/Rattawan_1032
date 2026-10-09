@@ -2,37 +2,42 @@
    Portfolio Stylesheet - MDT312 Web Programming
    ========================================== */
 
-/* --- Variables --- */
+/* --- Variables (Theme: Elegant Royal Purple - ตกแต่งธีมสีม่วง) --- */
 :root {
-    --color-text-main: #0f172a;
-    --color-text-body: #334155;
-    --color-text-sub: #64748b;
+    --color-text-main: #1e1b4b;          /* Dark Indigo-Violet */
+    --color-text-body: #334155;          /* Slate Body Text */
+    --color-text-sub: #64748b;           /* Muted Slate */
     --color-text-light: #94a3b8;
 
-    --color-header-bg: #1e293b;
-    --color-header-border: #0f172a;
+    --color-header-bg: #2e1065;          /* Deep Royal Purple (violet-950) */
+    --color-header-border: #1e1b4b;
 
-    --color-accent-blue: #2563eb;
-    --color-accent-blue-hover: #1d4ed8;
-    --color-accent-blue-bg: #eff6ff;
-    --color-accent-blue-border: #bfdbfe;
+    --color-accent-purple: #7c3aed;      /* Primary Royal Purple (violet-600) */
+    --color-accent-purple-hover: #6d28d9;/* Deep Purple Hover (violet-700) */
+    --color-accent-purple-bg: #f5f3ff;   /* Soft Lavender Tint (violet-50) */
+    --color-accent-purple-border: #ddd6fe;/* Soft Purple Border (violet-200) */
 
-    --bg-page: #f8fafc;
+    --color-accent-blue: #7c3aed;        /* Primary Accent (Purple) */
+    --color-accent-blue-hover: #6d28d9;  /* Hover Accent (Purple) */
+    --color-accent-blue-bg: #f5f3ff;     /* Tinted Accent (Purple) */
+    --color-accent-blue-border: #ddd6fe; /* Border Accent (Purple) */
+
+    --bg-page: #faf5ff;                  /* Softest Purple Page BG */
     --bg-container: #ffffff;
-    --bg-surface-subtle: #f1f5f9;
+    --bg-surface-subtle: #fbf7ff;        /* Subtle Light Lavender Surface */
 
-    --border-main: #e2e8f0;
-    --border-subtle: #edf2f7;
-    --table-zebra: #fcfdfe;
-    --table-hover: #f1f5f9;
+    --border-main: #e9d5ff;              /* Light Purple Border (purple-200) */
+    --border-subtle: #f3e8ff;            /* Very Soft Purple (purple-100) */
+    --table-zebra: #faf5ff;              /* Purple Zebra Striping */
+    --table-hover: #f3e8ff;              /* Row Hover Purple */
 
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 20px;
     --radius-pill: 9999px;
 
-    --shadow-main: 0 10px 30px -5px rgba(15, 23, 42, 0.06), 0 4px 6px -2px rgba(15, 23, 42, 0.02);
-    --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04);
+    --shadow-main: 0 14px 34px -5px rgba(91, 33, 182, 0.08), 0 4px 6px -2px rgba(91, 33, 182, 0.03);
+    --shadow-card: 0 2px 8px rgba(124, 58, 237, 0.06);
 }
 
 /* --- Base --- */
@@ -46,7 +51,7 @@ html {
 
 body {
     background-color: var(--bg-page);
-    background-image: linear-gradient(180deg, #edf2f7 0%, #f8fafc 260px);
+    background-image: linear-gradient(180deg, #ede9fe 0%, #faf5ff 280px);
     font-family: 'Prompt', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--color-text-body);
     line-height: 1.65;
@@ -126,16 +131,16 @@ body {
 }
 
 .page-nav-link:hover {
-    color: var(--color-accent-blue);
-    background-color: var(--color-accent-blue-bg);
-    border-color: var(--color-accent-blue-border);
+    color: var(--color-accent-purple);
+    background-color: var(--color-accent-purple-bg);
+    border-color: var(--color-accent-purple-border);
 }
 
 .page-nav-link.active {
-    background-color: var(--color-header-bg);
+    background: linear-gradient(135deg, #2e1065, #4c1d95);
     color: #ffffff !important;
-    border-color: var(--color-header-bg);
-    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.15);
+    border-color: #2e1065;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
 }
 
 /* --- Assignment Cards & Showcase --- */
@@ -213,19 +218,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 9px 16px;
-    background: var(--color-accent-blue);
+    padding: 9px 18px;
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
     color: #ffffff !important;
     text-decoration: none;
     font-weight: 600;
     font-size: 13px;
     border-radius: var(--radius-sm);
-    transition: background-color 0.2s;
+    transition: all 0.2s ease;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(124, 58, 237, 0.25);
 }
 
 .btn-open-assignment:hover {
-    background: var(--color-accent-blue-hover);
+    background: linear-gradient(135deg, #6d28d9, #5b21b6);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.35);
+    transform: translateY(-1px);
 }
 
 /* Hobbies & Interests Tags */
@@ -265,11 +273,11 @@ body {
 
 .profile-frame {
     display: inline-block;
-    padding: 5px;
+    padding: 6px;
     background-color: #ffffff;
     border: 2px solid var(--border-main);
     border-radius: 36px;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 28px rgba(124, 58, 237, 0.15);
 }
 
 .profile-img {
@@ -357,7 +365,7 @@ h2.candidate-en {
 .objective-card {
     background-color: #ffffff;
     border: 1px solid var(--border-main);
-    border-left: 4px solid var(--color-accent-blue);
+    border-left: 4px solid var(--color-accent-purple);
     padding: 11px 14px;
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
     margin-top: 10px;
@@ -378,9 +386,9 @@ h2.candidate-en {
 }
 
 .chip-role {
-    background-color: var(--color-accent-blue-bg);
-    color: #1d4ed8;
-    border: 1px solid var(--color-accent-blue-border);
+    background-color: var(--color-accent-purple-bg);
+    color: #6d28d9;
+    border: 1px solid var(--color-accent-purple-border);
     font-size: 12px;
     font-weight: 600;
     padding: 2px 9px;
@@ -425,16 +433,16 @@ h2.candidate-en {
 }
 
 .tab-btn:hover {
-    color: var(--color-text-main);
+    color: var(--color-accent-purple);
     background-color: #ffffff;
     box-shadow: var(--shadow-card);
 }
 
 .tab-btn.active {
-    background-color: var(--color-header-bg);
+    background: linear-gradient(135deg, #2e1065, #581c87);
     color: #ffffff !important;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.16);
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.28);
 }
 
 /* --- Tab Content Panels --- */
@@ -474,9 +482,9 @@ hr.section-divider {
 }
 
 .section-num {
-    background-color: var(--bg-surface-subtle);
-    color: var(--color-text-main);
-    border: 1px solid var(--border-main);
+    background-color: #f5f3ff;
+    color: #6d28d9;
+    border: 1px solid #ddd6fe;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 12px;
@@ -636,8 +644,8 @@ a:hover {
 
 .btn-action:hover {
     background-color: #ffffff;
-    border-color: #93c5fd;
-    color: var(--color-accent-blue) !important;
+    border-color: #c4b5fd;
+    color: var(--color-accent-purple) !important;
     box-shadow: var(--shadow-card);
 }
 
@@ -691,9 +699,9 @@ a:hover {
 }
 
 .skill-tag-code {
-    background-color: #eff6ff;
-    color: #1e40af;
-    border: 1px solid #dbeafe;
+    background-color: #f5f3ff;
+    color: #6d28d9;
+    border: 1px solid #ddd6fe;
 }
 
 .skill-tag-design {
@@ -721,7 +729,7 @@ a:hover {
 
 /* --- Projects Showcase --- */
 .project-cell {
-    background-color: #f8fafc;
+    background-color: #faf5ff;
     vertical-align: middle;
 }
 
@@ -794,9 +802,9 @@ h3.project-title {
 }
 
 .badge-project-type {
-    background-color: var(--color-accent-blue-bg);
-    color: #1d4ed8;
-    border: 1px solid var(--color-accent-blue-border);
+    background-color: var(--color-accent-purple-bg);
+    color: #6d28d9;
+    border: 1px solid var(--color-accent-purple-border);
     font-size: 11px;
     font-weight: 600;
     padding: 2px 8px;
@@ -805,7 +813,7 @@ h3.project-title {
 
 .project-tech-meta {
     font-size: 12.5px;
-    color: #0369a1;
+    color: #7c3aed;
     margin: 3px 0 6px 0;
     font-weight: 500;
 }
@@ -848,8 +856,8 @@ h3.project-title {
 
 .page-nav-btn:hover {
     background-color: #ffffff;
-    border-color: #93c5fd;
-    color: var(--color-accent-blue) !important;
+    border-color: #c4b5fd;
+    color: var(--color-accent-purple) !important;
     box-shadow: var(--shadow-card);
 }
 
@@ -972,18 +980,18 @@ h3.project-title {
     bottom: 28px;
     left: 50%;
     transform: translateX(-50%) translateY(40px);
-    background-color: #1e293b;
+    background-color: #2e1065;
     color: #ffffff;
     padding: 10px 22px;
     border-radius: var(--radius-pill);
     font-size: 13.5px;
     font-weight: 500;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(46, 16, 101, 0.35);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 10000;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid #7c3aed;
 }
 
 .toast-notification.show {
@@ -998,7 +1006,7 @@ h3.project-title {
     right: 28px;
     width: 44px;
     height: 44px;
-    background-color: var(--color-header-bg);
+    background: linear-gradient(135deg, #7c3aed, #581c87);
     color: #ffffff;
     border: none;
     border-radius: 50%;
@@ -1007,12 +1015,18 @@ h3.project-title {
     justify-content: center;
     font-size: 18px;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
     opacity: 0;
     visibility: hidden;
     transform: translateY(12px);
     transition: all 0.25s ease;
     z-index: 999;
+}
+
+.btn-back-to-top:hover {
+    background: linear-gradient(135deg, #6d28d9, #4c1d95);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.45);
 }
 
 .btn-back-to-top.visible {
@@ -1021,11 +1035,7 @@ h3.project-title {
     transform: translateY(0);
 }
 
-.btn-back-to-top:hover {
-    background-color: var(--color-accent-blue);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-}
+
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {

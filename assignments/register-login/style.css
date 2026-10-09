@@ -81,8 +81,9 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus {
-    border-color: #007bff;
+    border-color: #7c3aed;
     outline: none;
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.15);
 }
 
 .radio-label {
@@ -107,15 +108,16 @@ input[type="reset"] {
     font-family: inherit;
     font-size: 14px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #7c3aed;
     color: white;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #6d28d9;
 }
 
 input[type="reset"] {
@@ -135,6 +137,11 @@ input[type="reset"]:hover {
 }
 
 .switch-page a {
-    color: #007bff;
+    color: #7c3aed;
     text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
 }

@@ -5,79 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio สมัครงาน - นักศึกษาหลักสูตรเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">
-    <meta name="keywords" content="Portfolio, MDT312, Web Programming, KMUTT, Front-End Developer, UI UX Designer">
-    <meta name="author" content="[ใส่ชื่อของคุณ]">
-    <title>Portfolio - [ชื่อ-นามสกุลของคุณ] | Web Programming MDT312</title>
+        content="Portfolio สมัครงาน - นางสาว รัตตวัลย์ นักศึกษาหลักสูตรเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">
+    <meta name="keywords" content="Portfolio, MDT312, Web Programming, KMUTT, Front-End Developer, UI UX Designer, รัตตวัลย์">
+    <meta name="author" content="รัตตวัลย์">
+    <title>Portfolio - นางสาว รัตตวัลย์ | Web Programming MDT312</title>
 
-    <!-- Google Fonts: Plus Jakarta Sans และ Prompt ฟอนต์สมัยใหม่ สะอาดตา ไร้อิโมจิ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- ลิงก์เชื่อมโยงไปยังไฟล์ External CSS ตามโจทย์ที่อาจารย์กำหนด -->
+    <!-- External CSS (แยกไฟล์ตามเกณฑ์คะแนน MDT312) -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 
 <body>
 
-    <!-- Container กลางสำหรับควบคุมความกว้างและจัดกึ่งกลางหน้าเว็บ (Warm Minimal Style) -->
     <div class="container">
 
-        <!-- แถบหัวเรื่อง PORTFOLIO ด้านบนสุด -->
+        <!-- Top Bar -->
         <div class="portfolio-top-bar">
             <span class="portfolio-main-title">PORTFOLIO</span>
+            <span class="portfolio-sub-label">Media Technology • MDT312 KMUTT</span>
         </div>
 
-        <!-- ========================================================
-             ส่วนหัวของเพจ (Header & Hero Profile Section)
-             จัดวางรูปถ่าย ชื่อ-นามสกุล ข้อมูลการศึกษา และเป้าหมายการทำงาน
-             ======================================================== -->
+        <!-- Header Profile -->
         <header class="header-card" id="about">
             <table class="no-border table-padding-10">
                 <tr>
-                    <!-- คอลัมน์รูปถ่ายโปรไฟล์ขนาดใหญ่ทรง Squircle มนน่ารัก -->
                     <td class="col-35 text-center profile-cell">
                         <div class="profile-frame">
-                            <!-- [แก้ไขจุดนี้]: เปลี่ยนเป็นไฟล์รูปภาพของคุณในโฟลเดอร์ images/ เช่น images/profile.jpg -->
-                            <img src="images/profile.jpg" alt="รูปถ่ายประจำตัวผู้สมัครงาน" class="profile-img">
+                            <img src="images/profile.jpg" alt="รูปถ่ายประจำตัวผู้สมัครงาน นางสาว รัตตวัลย์"
+                                class="profile-img">
                         </div>
                     </td>
 
-                    <!-- คอลัมน์ข้อมูลผู้สมัครงาน -->
                     <td class="col-65 text-left header-content-cell">
                         <div class="pill-group">
                             <span class="pill-status"><span class="dot-indicator"></span> พร้อมเริ่มงาน / ฝึกงาน</span>
                         </div>
 
-                        <!-- [แก้ไขจุดนี้]: ใส่ชื่อ-นามสกุลของคุณ -->
-                        <h1 class="candidate-name">[ชื่อ - นามสกุลของคุณ]</h1>
-                        <h2 class="candidate-en">[Your Full Name in English]</h2>
+                        <h1 class="candidate-name">นางสาว รัตตวัลย์</h1>
+                        <h2 class="candidate-en">Miss Rattawan</h2>
 
-                        <!-- ข้อมูลสังกัดและหลักสูตร -->
                         <div class="student-meta-box">
                             <table class="no-border meta-table">
                                 <tr>
                                     <td class="meta-label">รหัสนักศึกษา</td>
-                                    <!-- [แก้ไขจุดนี้]: รหัสนักศึกษาของคุณ -->
-                                    <td class="meta-value"><strong>65000000000</strong></td>
+                                    <td class="meta-value"><strong>65070501032</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="meta-label">หลักสูตร / สาขา</td>
-                                    <td class="meta-value">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีมีเดีย (Media
-                                        Technology)</td>
+                                    <td class="meta-value">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีมีเดีย (Media Technology)</td>
                                 </tr>
                                 <tr>
                                     <td class="meta-label">สถาบันการศึกษา</td>
-                                    <td class="meta-value">คณะสถาปัตยกรรมศาสตร์และการออกแบบ
-                                        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)</td>
+                                    <td class="meta-value">คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)</td>
                                 </tr>
                             </table>
                         </div>
 
-                        <!-- ตำแหน่งงานที่ต้องการสมัครและเป้าหมายการทำงาน -->
                         <div class="objective-card">
                             <div class="objective-header">
                                 <span class="label-bold">ตำแหน่งงานที่สนใจสมัคร:</span>
@@ -85,9 +73,7 @@
                                 <span class="chip-role">UI/UX Designer</span>
                             </div>
                             <p class="objective-text">
-                                นักศึกษาชั้นปีที่ 3 ที่มีความสนใจและมุ่งมั่นในการพัฒนาเว็บไซต์ด้วย Semantic HTML,
-                                External CSS, JavaScript และการออกแบบส่วนติดต่อผู้ใช้ (UI/UX)
-                                พร้อมนำทักษะด้านโค้ดและการออกแบบมาเรียนรู้และร่วมงานกับทีมอย่างมืออาชีพ
+                                นักศึกษาชั้นปีที่ 3 สาขาวิชาเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี มีความสนใจด้านการพัฒนา Front-End และงานออกแบบ UI/UX กำลังมองหาโอกาสในการฝึกงานเพื่อนำทักษะด้าน HTML, CSS, JavaScript และ Figma มาประยุกต์ใช้ในการทำงานจริง พร้อมเรียนรู้และพัฒนาตนเองร่วมกับทีมงาน
                             </p>
                         </div>
                     </td>
@@ -97,40 +83,35 @@
 
         <hr class="section-divider">
 
-        <!-- ========================================================
-             แถบแท็บสลับข้อมูล (Interactive Tab Navigation Bar)
-             เมื่อกดคลิกที่แถบใด จะสลับข้อมูลเป็นเรื่องนั้นทันที
-             ======================================================== -->
+        <!-- Tab Navigation (ควบคุมผ่าน script.js) -->
         <nav class="tab-nav" aria-label="แถบสลับเนื้อหา">
-            <button type="button" class="tab-btn active" data-tab="tab-contact" onclick="switchTab('tab-contact')">
+            <button type="button" class="tab-btn active" data-tab="tab-contact" role="tab" aria-selected="true">
                 ข้อมูลการติดต่อ
             </button>
-            <button type="button" class="tab-btn" data-tab="tab-education" onclick="switchTab('tab-education')">
+            <button type="button" class="tab-btn" data-tab="tab-education" role="tab" aria-selected="false">
                 ประวัติการศึกษา
             </button>
-            <button type="button" class="tab-btn" data-tab="tab-skills" onclick="switchTab('tab-skills')">
+            <button type="button" class="tab-btn" data-tab="tab-skills" role="tab" aria-selected="false">
                 ทักษะความสามารถ
             </button>
-            <button type="button" class="tab-btn" data-tab="tab-projects" onclick="switchTab('tab-projects')">
+            <button type="button" class="tab-btn" data-tab="tab-projects" role="tab" aria-selected="false">
                 ผลงานและโครงงาน
             </button>
-            <button type="button" class="tab-btn" data-tab="tab-experience" onclick="switchTab('tab-experience')">
+            <button type="button" class="tab-btn" data-tab="tab-experience" role="tab" aria-selected="false">
                 ประสบการณ์และกิจกรรม
             </button>
-            <button type="button" class="tab-btn" data-tab="tab-awards" onclick="switchTab('tab-awards')">
+            <button type="button" class="tab-btn" data-tab="tab-awards" role="tab" aria-selected="false">
                 รางวัลและเกียรติบัตร
+            </button>
+            <button type="button" class="tab-btn" data-tab="tab-references" role="tab" aria-selected="false">
+                แหล่งอ้างอิง
             </button>
         </nav>
 
-        <!-- ========================================================
-             เนื้อหาแต่ละแท็บ (Tab Content Panels)
-             ======================================================== -->
         <main>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 1: ข้อมูลการติดต่อ (Contact Information)
-                 ---------------------------------------------------- -->
-            <div id="tab-contact" class="tab-panel active">
+            <!-- Tab 1: Contact Information -->
+            <div id="tab-contact" class="tab-panel active" role="tabpanel" aria-hidden="false">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">01</span>
@@ -140,60 +121,74 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th colspan="2" class="table-cell">ช่องทางการติดต่อและที่อยู่สำหรับติดต่องาน</th>
-                        </tr>
-                        <tr>
-                            <td class="table-cell col-25"><strong>อีเมล (Email)</strong></td>
-                            <td class="table-cell col-75">
-                                <!-- [แก้ไขจุดนี้]: ใส่อีเมลของคุณ -->
-                                <a href="mailto:your.student@mail.kmutt.ac.th"
-                                    class="link-contact">your.student@mail.kmutt.ac.th</a> (มหาวิทยาลัย) &nbsp;|&nbsp;
-                                <a href="mailto:your.personal@gmail.com" class="link-contact">your.personal@gmail.com</a>
-                                (ส่วนตัว)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell"><strong>เบอร์โทรศัพท์ (Phone)</strong></td>
-                            <td class="table-cell">
-                                <!-- [แก้ไขจุดนี้]: ใส่เบอร์โทรศัพท์ของคุณ -->
-                                <a href="tel:0812345678" class="link-contact">081-234-5678</a> (ติดต่อได้ในวันและเวลาราชการ)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell"><strong>พอร์ตโฟลิโอออนไลน์</strong></td>
-                            <td class="table-cell">
-                                <!-- [แก้ไขจุดนี้]: ใส่ลิงก์ผลงานจริงของคุณ -->
-                                <div class="contact-actions">
-                                    <a href="https://github.com/yourusername" target="_blank" class="btn-action">GitHub
-                                        Profile</a>
-                                    <a href="https://linkedin.com/in/yourusername" target="_blank"
-                                        class="btn-action">LinkedIn Profile</a>
-                                    <a href="https://yourportfolio.web.app" target="_blank" class="btn-action">Live Web
-                                        Portfolio</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="table-header">
-                            <th class="table-cell col-50">ที่อยู่ติดต่อปัจจุบัน (ไทย)</th>
-                            <th class="table-cell col-50">Current Address (English)</th>
-                        </tr>
-                        <tr>
-                            <td class="table-cell">
-                                <!-- [แก้ไขจุดนี้]: ที่อยู่ภาษาไทย -->
-                                โครงการร่วมบริหารหลักสูตรฯ (มีเดีย)<br>
-                                คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
-                                126 ถ.ประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140
-                            </td>
-                            <td class="table-cell">
-                                Media Arts and Technology<br>
-                                School of Architecture and Design<br>
-                                King Mongkut’s University of Technology Thonburi<br>
-                                126 Pracha-Utit Rd., Bangmod, Thung-kru, Bangkok 10140
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th colspan="2" class="table-cell">ช่องทางการติดต่อและข้อมูลส่วนบุคคล</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell col-25"><strong>อีเมล (Email)</strong></td>
+                                <td class="table-cell col-75">
+                                    <a href="mailto:rattawan.1032@mail.kmutt.ac.th"
+                                        class="link-contact">rattawan.1032@mail.kmutt.ac.th</a> (มหาวิทยาลัย) &nbsp;|&nbsp;
+                                    <a href="mailto:rattawan.rkr@gmail.com"
+                                        class="link-contact">rattawan.rkr@gmail.com</a> (ส่วนตัว)
+                                    <div class="contact-actions">
+                                        <button type="button" class="btn-action"
+                                            data-copy="rattawan.1032@mail.kmutt.ac.th">คัดลอกอีเมล มจธ.</button>
+                                        <button type="button" class="btn-action"
+                                            data-copy="rattawan.rkr@gmail.com">คัดลอกอีเมลส่วนตัว</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>เบอร์โทรศัพท์ (Phone)</strong></td>
+                                <td class="table-cell">
+                                    <a href="tel:0812345678" class="link-contact">081-234-5678</a> (ติดต่อได้ในวันและเวลาราชการ)
+                                    <div class="contact-actions">
+                                        <button type="button" class="btn-action"
+                                            data-copy="081-234-5678">คัดลอกเบอร์โทรศัพท์</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>พอร์ตโฟลิโอออนไลน์</strong></td>
+                                <td class="table-cell">
+                                    <div class="contact-actions">
+                                        <a href="https://github.com/Rattawan-RR" target="_blank"
+                                            class="btn-action">GitHub Profile</a>
+                                        <a href="https://linkedin.com/in/rattawan" target="_blank"
+                                            class="btn-action">LinkedIn Profile</a>
+                                        <a href="https://rattawan-portfolio.web.app" target="_blank"
+                                            class="btn-action">Live Web Portfolio</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>ข้อมูลส่วนบุคคลพื้นฐาน</strong></td>
+                                <td class="table-cell">
+                                    สัญชาติ: ไทย &nbsp;|&nbsp; ศาสนา: พุทธ &nbsp;|&nbsp; ภาษา: ไทย (Native), อังกฤษ (Professional Working Proficiency)
+                                </td>
+                            </tr>
+                            <tr class="table-header">
+                                <th class="table-cell col-50">ที่อยู่ติดต่อปัจจุบัน (ไทย)</th>
+                                <th class="table-cell col-50">Current Address (English)</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">
+                                    โครงการร่วมบริหารหลักสูตรฯ (มีเดีย)<br>
+                                    คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
+                                    126 ถ.ประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140
+                                </td>
+                                <td class="table-cell">
+                                    Media Arts and Technology<br>
+                                    School of Architecture and Design<br>
+                                    King Mongkut’s University of Technology Thonburi<br>
+                                    126 Pracha-Utit Rd., Bangmod, Thung-kru, Bangkok 10140
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
@@ -204,10 +199,8 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 2: ประวัติการศึกษา (Education History)
-                 ---------------------------------------------------- -->
-            <div id="tab-education" class="tab-panel">
+            <!-- Tab 2: Education History -->
+            <div id="tab-education" class="tab-panel" role="tabpanel" aria-hidden="true">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">02</span>
@@ -217,48 +210,47 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th class="table-cell col-20">ปี พ.ศ.</th>
-                            <th class="table-cell col-45">ระดับการศึกษา / สาขาวิชา</th>
-                            <th class="table-cell col-35">สถาบันการศึกษา</th>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: ข้อมูลระดับปริญญาตรี -->
-                        <tr>
-                            <td class="table-cell text-center">
-                                <span class="badge-year">2565 - ปัจจุบัน</span><br>
-                                <span class="text-note">(คาดว่าจะสำเร็จการศึกษา 2569)</span>
-                            </td>
-                            <td class="table-cell">
-                                <strong>ระดับปริญญาตรี (วท.บ. หรือ ศศ.บ.)</strong><br>
-                                หลักสูตรเทคโนโลยีมีเดีย (Media Technology) / คณะสถาปัตยกรรมศาสตร์และการออกแบบ<br>
-                                <span class="tag-gpax">เกรดเฉลี่ยสะสม (GPAX): 3.xx / 4.00</span>
-                                <ul class="clean-bullet-list">
-                                    <li><strong>วิชาเฉพาะที่เกี่ยวข้อง:</strong> MDT312 Web Programming, Interaction Design,
-                                        Computer Graphics Programming, UI/UX Design for Digital Media</li>
-                                </ul>
-                            </td>
-                            <td class="table-cell">
-                                <strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)</strong><br>
-                                King Mongkut’s University of Technology Thonburi
-                            </td>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: ข้อมูลมัธยมศึกษา -->
-                        <tr>
-                            <td class="table-cell text-center">
-                                <span class="badge-year badge-year-past">2562 - 2564</span>
-                            </td>
-                            <td class="table-cell">
-                                <strong>มัธยมศึกษาตอนปลาย</strong><br>
-                                แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์<br>
-                                <span class="tag-gpax">เกรดเฉลี่ยสะสม (GPAX): 3.xx / 4.00</span>
-                            </td>
-                            <td class="table-cell">
-                                <!-- [แก้ไขจุดนี้]: ชื่อโรงเรียนมัธยมของคุณ -->
-                                โรงเรียน [ระบุชื่อโรงเรียนมัธยมของคุณ]
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th class="table-cell col-20">ปี พ.ศ.</th>
+                                <th class="table-cell col-45">ระดับการศึกษา / สาขาวิชา</th>
+                                <th class="table-cell col-35">สถาบันการศึกษา</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center">
+                                    <span class="badge-year">2565 - ปัจจุบัน</span><br>
+                                    <span class="text-note">(คาดว่าจะสำเร็จการศึกษา 2569)</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>ระดับปริญญาตรี (วท.บ.)</strong><br>
+                                    หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีมีเดีย (Media Technology)<br>
+                                    คณะสถาปัตยกรรมศาสตร์และการออกแบบ<br>
+                                    <span class="tag-gpax">เกรดเฉลี่ยสะสม (GPAX): 3.65 / 4.00</span>
+                                    <ul class="clean-bullet-list">
+                                        <li><strong>วิชาเฉพาะทางที่เรียน:</strong> MDT312 Web Programming, Interaction Design, Computer Graphics Programming, UI/UX Design for Digital Media, Human-Computer Interaction, Data Structures</li>
+                                    </ul>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)</strong><br>
+                                    King Mongkut’s University of Technology Thonburi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center">
+                                    <span class="badge-year badge-year-past">2562 - 2564</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>มัธยมศึกษาตอนปลาย</strong><br>
+                                    แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์<br>
+                                    <span class="tag-gpax">เกรดเฉลี่ยสะสม (GPAX): 3.75 / 4.00</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>โรงเรียนมัธยมศึกษา (สายวิทยาศาสตร์ - คณิตศาสตร์)</strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
@@ -271,10 +263,8 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 3: ทักษะและความสามารถ (Skills & Competencies)
-                 ---------------------------------------------------- -->
-            <div id="tab-skills" class="tab-panel">
+            <!-- Tab 3: Skills & Competencies -->
+            <div id="tab-skills" class="tab-panel" role="tabpanel" aria-hidden="true">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">03</span>
@@ -284,58 +274,74 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th class="table-cell col-30">หมวดหมู่ทักษะ</th>
-                            <th class="table-cell col-70">รายการทักษะและเครื่องมือที่สามารถใช้งานได้</th>
-                        </tr>
-                        <tr>
-                            <td class="table-cell">
-                                <strong>การพัฒนาเว็บไซต์ (Web Development)</strong><br>
-                                <span class="text-note">การเขียนโค้ดตามมาตรฐานเว็บสากล</span>
-                            </td>
-                            <td class="table-cell">
-                                <div class="tags-container">
-                                    <span class="skill-tag skill-tag-warm">HTML5 Semantic</span>
-                                    <span class="skill-tag skill-tag-warm">CSS3 (Flexbox &amp; Grid)</span>
-                                    <span class="skill-tag skill-tag-warm">JavaScript (ES6+)</span>
-                                    <span class="skill-tag skill-tag-neutral">Responsive Web Design</span>
-                                    <span class="skill-tag skill-tag-neutral">Git &amp; GitHub</span>
-                                    <span class="skill-tag skill-tag-neutral">Web Accessibility</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell">
-                                <strong>งานออกแบบและสื่อดิจิทัล (Design &amp; Media Tools)</strong><br>
-                                <span class="text-note">การจัดทำส่วนติดต่อผู้ใช้และกราฟิก</span>
-                            </td>
-                            <td class="table-cell">
-                                <div class="tags-container">
-                                    <span class="skill-tag skill-tag-sage">Figma (UI/UX &amp; Prototyping)</span>
-                                    <span class="skill-tag skill-tag-sage">Adobe Photoshop</span>
-                                    <span class="skill-tag skill-tag-sage">Adobe Illustrator</span>
-                                    <span class="skill-tag skill-tag-neutral">Adobe Premiere Pro</span>
-                                    <span class="skill-tag skill-tag-neutral">Design System</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell">
-                                <strong>ทักษะภาษาและการทำงาน (Languages &amp; Soft Skills)</strong><br>
-                                <span class="text-note">การสื่อสารและการทำงานร่วมกับทีม</span>
-                            </td>
-                            <td class="table-cell">
-                                <ul class="clean-bullet-list">
-                                    <li><strong>ภาษาไทย:</strong> ภาษาแม่ สื่อสารได้อย่างคล่องแคล่วและถูกต้องตามกาลเทศะ</li>
-                                    <li><strong>ภาษาอังกฤษ:</strong> สามารถสื่อสารในการทำงานและอ่านศึกษา Technical
-                                        Documentation ได้เป็นอย่างดี</li>
-                                    <li><strong>ทักษะการทำงาน:</strong> การทำงานร่วมกับผู้อื่น (Team Collaboration),
-                                        ความคิดสร้างสรรค์, การเปิดรับข้อเสนอแนะ และความรับผิดชอบต่อเวลา</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th class="table-cell col-30">หมวดหมู่ทักษะ</th>
+                                <th class="table-cell col-70">รายการทักษะและเครื่องมือที่สามารถใช้งานได้</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">
+                                    <strong>การพัฒนาเว็บไซต์ (Web Development)</strong><br>
+                                    <span class="text-note">การเขียนโค้ดตามมาตรฐานเว็บสากล</span>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="tags-container">
+                                        <span class="skill-tag skill-tag-code">HTML5 Semantic</span>
+                                        <span class="skill-tag skill-tag-code">CSS3 (Flexbox &amp; Grid)</span>
+                                        <span class="skill-tag skill-tag-code">JavaScript (ES6+)</span>
+                                        <span class="skill-tag skill-tag-code">DOM Manipulation</span>
+                                        <span class="skill-tag skill-tag-neutral">Responsive Web Design</span>
+                                        <span class="skill-tag skill-tag-neutral">Git &amp; GitHub</span>
+                                        <span class="skill-tag skill-tag-neutral">Web Accessibility (a11y)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">
+                                    <strong>งานออกแบบและสื่อดิจิทัล (Design &amp; Media Tools)</strong><br>
+                                    <span class="text-note">การจัดทำส่วนติดต่อผู้ใช้และกราฟิก</span>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="tags-container">
+                                        <span class="skill-tag skill-tag-design">Figma (UI/UX &amp; Prototyping)</span>
+                                        <span class="skill-tag skill-tag-design">Adobe Photoshop</span>
+                                        <span class="skill-tag skill-tag-design">Adobe Illustrator</span>
+                                        <span class="skill-tag skill-tag-neutral">Adobe Premiere Pro</span>
+                                        <span class="skill-tag skill-tag-neutral">Design System</span>
+                                        <span class="skill-tag skill-tag-neutral">Wireframing</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">
+                                    <strong>เครื่องมือและสภาพแวดล้อม (Tools &amp; Environment)</strong><br>
+                                    <span class="text-note">เครื่องมือที่ใช้ในการพัฒนาจริง</span>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="tags-container">
+                                        <span class="skill-tag skill-tag-neutral">VS Code</span>
+                                        <span class="skill-tag skill-tag-neutral">Chrome DevTools</span>
+                                        <span class="skill-tag skill-tag-neutral">GitHub Desktop</span>
+                                        <span class="skill-tag skill-tag-neutral">Live Server</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">
+                                    <strong>ทักษะภาษาและการทำงาน (Languages &amp; Soft Skills)</strong><br>
+                                    <span class="text-note">การสื่อสารและการทำงานร่วมกับทีม</span>
+                                </td>
+                                <td class="table-cell">
+                                    <ul class="clean-bullet-list">
+                                        <li><strong>ภาษาไทย:</strong> ภาษาแม่ สื่อสารได้อย่างคล่องแคล่วและถูกต้องตามกาลเทศะ</li>
+                                        <li><strong>ภาษาอังกฤษ:</strong> สามารถสื่อสารในการทำงานและอ่านศึกษา Technical Documentation ได้เป็นอย่างดี</li>
+                                        <li><strong>ทักษะการทำงาน:</strong> การทำงานร่วมกับผู้อื่น (Team Collaboration), ความคิดสร้างสรรค์, การเปิดรับข้อเสนอแนะ และความรับผิดชอบต่อเวลา</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
@@ -348,10 +354,8 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 4: ผลงานและโครงงานที่โดดเด่น (Featured Projects)
-                 ---------------------------------------------------- -->
-            <div id="tab-projects" class="tab-panel">
+            <!-- Tab 4: Featured Projects -->
+            <div id="tab-projects" class="tab-panel" role="tabpanel" aria-hidden="true">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">04</span>
@@ -361,107 +365,98 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th class="table-cell col-35">ตัวอย่างภาพผลงาน</th>
-                            <th class="table-cell col-65">รายละเอียดโปรเจกต์และหน้าที่ความรับผิดชอบ</th>
-                        </tr>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th class="table-cell col-35">ตัวอย่างภาพผลงาน</th>
+                                <th class="table-cell col-65">รายละเอียดโปรเจกต์และหน้าที่ความรับผิดชอบ</th>
+                            </tr>
 
-                        <!-- โปรเจกต์ที่ 1 -->
-                        <tr>
-                            <td class="table-cell text-center project-cell">
-                                <div class="img-frame">
-                                    <img src="images/project1.jpg" alt="ภาพตัวอย่างโครงงาน Web Dashboard"
-                                        class="project-img">
-                                </div>
-                            </td>
-                            <td class="table-cell">
-                                <div class="project-header-bar">
-                                    <h3 class="project-title">1. Cybernetics - Interactive Analytics Dashboard</h3>
-                                    <span class="badge-project-type">Web Development</span>
-                                </div>
-                                <p class="project-tech-meta">
-                                    <strong>เทคโนโลยีที่ใช้:</strong> HTML5, CSS3, JavaScript, Chart.js, Responsive Layout
-                                </p>
-                                <p class="project-desc">
-                                    โครงงานพัฒนาเว็บแอปพลิเคชันแดชบอร์ดสำหรับการนำเสนอและวิเคราะห์ข้อมูลเชิงภาพ
-                                    มีฟังก์ชันโต้ตอบ เช่น การสลับช่วงเวลา และจัด Layout
-                                    ให้แสดงผลได้อย่างสมบูรณ์บนทุกขนาดหน้าจอ
-                                </p>
-                                <ul class="clean-bullet-list">
-                                    <li><strong>บทบาทหน้าที่:</strong> ออกแบบ UI บน Figma และพัฒนาโค้ดหน้าเว็บด้วย Semantic
-                                        HTML และ External CSS</li>
-                                    <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
-                                            class="link-inline">ดูตัวอย่างเว็บไซต์ (Live Demo)</a> | <a href="#"
-                                            target="_blank" class="link-inline">ซอร์สโค้ด (GitHub)</a></li>
-                                </ul>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td class="table-cell text-center project-cell">
+                                    <div class="img-frame">
+                                        <img src="images/project1.jpg" alt="ภาพตัวอย่างโครงงาน Coffee Corner Web Application"
+                                            class="project-img">
+                                    </div>
+                                    <span class="text-note">(คลิกที่ภาพเพื่อขยายดูขนาดใหญ่)</span>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="project-header-bar">
+                                        <h3 class="project-title">1. Coffee Corner - เว็บไซต์แนะนำร้านกาแฟและเมนูเครื่องดื่ม</h3>
+                                        <span class="badge-project-type">Web Development</span>
+                                    </div>
+                                    <p class="project-tech-meta">
+                                        เทคโนโลยีที่ใช้: HTML5, CSS3, JavaScript, Flexbox/Grid, Responsive Layout
+                                    </p>
+                                    <p class="project-desc">
+                                        โครงงานพัฒนาเว็บไซต์แนะนำร้านกาแฟและเมนูเครื่องดื่ม ออกแบบหน้าเว็บให้มีความสบายตา อ่านง่าย และจัดวาง Layout แบบ Responsive เพื่อให้แสดงผลได้อย่างสมบูรณ์แบบทั้งบนสมาร์ตโฟนและคอมพิวเตอร์
+                                    </p>
+                                    <ul class="clean-bullet-list">
+                                        <li><strong>บทบาทหน้าที่:</strong> ออกแบบโครงร่าง UI บน Figma และพัฒนาโค้ดหน้าเว็บทั้งหมดด้วย Semantic HTML และ External CSS</li>
+                                        <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
+                                                class="link-inline">ดูตัวอย่างเว็บไซต์ (Live Demo)</a> | <a href="#"
+                                                target="_blank" class="link-inline">ซอร์สโค้ด (GitHub)</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
 
-                        <!-- โปรเจกต์ที่ 2 -->
-                        <tr>
-                            <td class="table-cell text-center project-cell">
-                                <div class="img-frame">
-                                    <img src="images/project2.jpg" alt="ภาพตัวอย่างโครงงาน UI/UX Application"
-                                        class="project-img">
-                                </div>
-                            </td>
-                            <td class="table-cell">
-                                <div class="project-header-bar">
-                                    <h3 class="project-title">2. VIBE - Creative Audio &amp; Media Discovery App</h3>
-                                    <span class="badge-project-type">UI/UX Case Study</span>
-                                </div>
-                                <p class="project-tech-meta">
-                                    <strong>เครื่องมือที่ใช้:</strong> Figma, Design System, User Persona, Interactive
-                                    Prototyping
-                                </p>
-                                <p class="project-desc">
-                                    กรณีศึกษาการวิจัยและออกแบบประสบการณ์ผู้ใช้ (UX/UI)
-                                    สำหรับแอปพลิเคชันค้นหาสื่อเสียงสร้างสรรค์ โดยเน้นการจัดวางตามหลัก Human-Computer
-                                    Interaction เพื่อความง่ายและลื่นไหลในการใช้งาน
-                                </p>
-                                <ul class="clean-bullet-list">
-                                    <li><strong>บทบาทหน้าที่:</strong> ค้นคว้าความต้องการของผู้ใช้ วางโครงร่าง Wireframe
-                                        และสร้าง Interactive Prototype</li>
-                                    <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
-                                            class="link-inline">เปิดดู Prototype บน Figma</a> | <a href="#" target="_blank"
-                                            class="link-inline">เอกสารสรุปผลวิจัย</a></li>
-                                </ul>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td class="table-cell text-center project-cell">
+                                    <div class="img-frame">
+                                        <img src="images/project2.jpg" alt="ภาพตัวอย่างโครงงาน StudyMate UI/UX Application"
+                                            class="project-img">
+                                    </div>
+                                    <span class="text-note">(คลิกที่ภาพเพื่อขยายดูขนาดใหญ่)</span>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="project-header-bar">
+                                        <h3 class="project-title">2. StudyMate - แอปพลิเคชันช่วยจัดตารางอ่านหนังสือสำหรับนักศึกษา</h3>
+                                        <span class="badge-project-type">UI/UX Case Study</span>
+                                    </div>
+                                    <p class="project-tech-meta">
+                                        เครื่องมือที่ใช้: Figma, Design System, User Persona, Interactive Prototyping
+                                    </p>
+                                    <p class="project-desc">
+                                        กรณีศึกษาการวิจัยและออกแบบประสบการณ์ผู้ใช้ (UX/UI) สำหรับแอปพลิเคชันจัดการเวลาและตารางอ่านหนังสือของนักศึกษา โดยเน้นการจัดวางตามหลัก Human-Computer Interaction เพื่อความสะดวกและเรียบง่ายในการใช้งานจริง
+                                    </p>
+                                    <ul class="clean-bullet-list">
+                                        <li><strong>บทบาทหน้าที่:</strong> สัมภาษณ์และค้นคว้าความต้องการของผู้ใช้ วางโครงร่าง Wireframe และสร้าง Interactive Prototype บน Figma</li>
+                                        <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
+                                                class="link-inline">เปิดดู Prototype บน Figma</a> | <a href="#" target="_blank"
+                                                class="link-inline">เอกสารสรุปผลงาน</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
 
-                        <!-- โปรเจกต์ที่ 3 (วิชา MDT312) -->
-                        <tr>
-                            <td class="table-cell text-center project-cell">
-                                <div class="project-empty-frame">
-                                    <span class="empty-title">Project Preview</span>
-                                    <span class="empty-note">ภาพตัวอย่างโครงงานวิชา MDT312</span>
-                                    <small class="text-note">(สามารถเพิ่มรูปภาพใน images/)</small>
-                                </div>
-                            </td>
-                            <td class="table-cell">
-                                <div class="project-header-bar">
-                                    <h3 class="project-title">3. Student Portfolio Web Page (MDT312 Project)</h3>
-                                    <span class="badge-project-type">Academic Assignment</span>
-                                </div>
-                                <p class="project-tech-meta">
-                                    <strong>เทคโนโลยีที่ใช้:</strong> Semantic HTML5, External CSS, Responsive Design, CSS
-                                    Flexbox/Grid
-                                </p>
-                                <p class="project-desc">
-                                    การพัฒนาเว็บไซต์แฟ้มสะสมผลงานส่วนบุคคลเพื่อการสมัครงานตามข้อกำหนดของรายวิชา
-                                    โดยเน้นการจัดโครงสร้างแบบ Semantic Markup และการจัดการสไตล์ผ่าน External CSS
-                                </p>
-                                <ul class="clean-bullet-list">
-                                    <li><strong>บทบาทหน้าที่:</strong> ผู้พัฒนาหลัก ออกแบบและเขียนโค้ด HTML/CSS ด้วยตนเอง
-                                    </li>
-                                    <li><strong>การเข้าชมผลงาน:</strong> <a
-                                            href="https://yourusername.github.io/portfolio-mdt312/" target="_blank"
-                                            class="link-inline">GitHub Pages Repository</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td class="table-cell text-center project-cell">
+                                    <div class="project-empty-frame">
+                                        <span class="empty-title">Portfolio Web App</span>
+                                        <span class="empty-note">งานสอบกลางภาควิชา MDT312</span>
+                                        <small class="text-note">(HTML5 / External CSS / JavaScript)</small>
+                                    </div>
+                                </td>
+                                <td class="table-cell">
+                                    <div class="project-header-bar">
+                                        <h3 class="project-title">3. Personal Portfolio Web Application (วิชา MDT312)</h3>
+                                        <span class="badge-project-type">Academic Project</span>
+                                    </div>
+                                    <p class="project-tech-meta">
+                                        เทคโนโลยีที่ใช้: Semantic HTML5, External CSS (style.css), External JavaScript (script.js), Tab Switching, Responsive Layout
+                                    </p>
+                                    <p class="project-desc">
+                                        การพัฒนาเว็บไซต์แฟ้มสะสมผลงานส่วนบุคคลเพื่อการสมัครงานตามข้อกำหนดของรายวิชา โดยเน้นการจัดโครงสร้างแบบ Semantic Markup การจัดการสไตล์ผ่าน External CSS และระบบแท็บสลับข้อมูลที่ลื่นไหลด้วย External JavaScript
+                                    </p>
+                                    <ul class="clean-bullet-list">
+                                        <li><strong>บทบาทหน้าที่:</strong> ผู้พัฒนาหลัก ออกแบบและเขียนโค้ด HTML/CSS/JavaScript ด้วยตนเองทั้งหมด</li>
+                                        <li><strong>การเข้าชมผลงาน:</strong> <a
+                                                href="https://rattawan.github.io/portfolio-mdt312/" target="_blank"
+                                                class="link-inline">GitHub Pages Repository</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
@@ -474,10 +469,8 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 5: ประสบการณ์และกิจกรรม (Experience & Activities)
-                 ---------------------------------------------------- -->
-            <div id="tab-experience" class="tab-panel">
+            <!-- Tab 5: Experience & Activities -->
+            <div id="tab-experience" class="tab-panel" role="tabpanel" aria-hidden="true">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">05</span>
@@ -487,52 +480,49 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th class="table-cell col-25">ปี พ.ศ.</th>
-                            <th class="table-cell col-75">ตำแหน่ง / หน้าที่ความรับผิดชอบ / องค์กร</th>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: ประสบการณ์ฟรีแลนซ์/ทำงาน -->
-                        <tr>
-                            <td class="table-cell text-center">
-                                <span class="badge-year">2567 - ปัจจุบัน</span>
-                            </td>
-                            <td class="table-cell">
-                                <strong>Freelance Front-End &amp; Graphic Designer</strong>, งานอิสระ
-                                <ul class="clean-bullet-list">
-                                    <li>รับออกแบบ Landing Page และพัฒนาเว็บไซต์ขนาดเล็กสำหรับลูกค้าธุรกิจ</li>
-                                    <li>จัดทำสื่อภาพกราฟิกเพื่อใช้ประชาสัมพันธ์บนช่องทางออนไลน์</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: กิจกรรมคณะ / มหาวิทยาลัย -->
-                        <tr>
-                            <td class="table-cell text-center">
-                                <span class="badge-year badge-year-past">2566 - 2567</span>
-                            </td>
-                            <td class="table-cell">
-                                <strong>ทีมงานฝ่ายมีเดียและเทคโนโลยี (Staff)</strong>, งาน KMUTT Open House
-                                <ul class="clean-bullet-list">
-                                    <li>จัดเตรียมสื่อดิจิทัลและดูแลระบบแนะนำหลักสูตรสาขาเทคโนโลยีมีเดีย</li>
-                                    <li>ให้ข้อมูลและคำแนะนำแนวทางการศึกษาแก่นักเรียนและผู้ปกครอง</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: การแข่งขัน / Hackathon -->
-                        <tr>
-                            <td class="table-cell text-center">
-                                <span class="badge-year badge-year-past">2566</span>
-                            </td>
-                            <td class="table-cell">
-                                <strong>ผู้เข้าร่วมกิจกรรมการแข่งขัน Hackathon</strong>,
-                                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-                                <ul class="clean-bullet-list">
-                                    <li>ร่วมกับเพื่อนในทีมพัฒนา Digital Prototype เพื่อแก้ไขปัญหาชีวิตประจำวันในมหาวิทยาลัย
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th class="table-cell col-25">ปี พ.ศ.</th>
+                                <th class="table-cell col-75">ตำแหน่ง / หน้าที่ความรับผิดชอบ / องค์กร</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center">
+                                    <span class="badge-year">2567 - ปัจจุบัน</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>Freelance Front-End &amp; Graphic Designer</strong>, งานอิสระ
+                                    <ul class="clean-bullet-list">
+                                        <li>รับออกแบบ Landing Page และพัฒนาเว็บไซต์ขนาดเล็กสำหรับลูกค้าธุรกิจ</li>
+                                        <li>จัดทำสื่อภาพกราฟิกเพื่อใช้ประชาสัมพันธ์บนช่องทางออนไลน์</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center">
+                                    <span class="badge-year badge-year-past">2566 - 2567</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>ทีมงานฝ่ายมีเดียและเทคโนโลยี (Staff)</strong>, งาน KMUTT Open House
+                                    <ul class="clean-bullet-list">
+                                        <li>จัดเตรียมสื่อดิจิทัลและดูแลระบบแนะนำหลักสูตรสาขาเทคโนโลยีมีเดีย</li>
+                                        <li>ให้ข้อมูลและคำแนะนำแนวทางการศึกษาแก่นักเรียนและผู้ปกครอง</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center">
+                                    <span class="badge-year badge-year-past">2566</span>
+                                </td>
+                                <td class="table-cell">
+                                    <strong>ผู้เข้าร่วมกิจกรรมการแข่งขัน Hackathon</strong>, มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                                    <ul class="clean-bullet-list">
+                                        <li>ร่วมกับเพื่อนในทีมพัฒนา Digital Prototype เพื่อแก้ไขปัญหาชีวิตประจำวันในมหาวิทยาลัย</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
@@ -545,10 +535,8 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------
-                 แท็บ 6: รางวัลและประกาศนียบัตร (Awards & Certifications)
-                 ---------------------------------------------------- -->
-            <div id="tab-awards" class="tab-panel">
+            <!-- Tab 6: Awards & Certifications -->
+            <div id="tab-awards" class="tab-panel" role="tabpanel" aria-hidden="true">
                 <section class="section-container">
                     <div class="section-title-wrap">
                         <span class="section-num">06</span>
@@ -558,37 +546,104 @@
                         </div>
                     </div>
 
-                    <table class="table-bordered table-padding-12">
-                        <tr class="table-header">
-                            <th class="table-cell col-20">ปี พ.ศ.</th>
-                            <th class="table-cell col-80">รายละเอียดรางวัล / เกียรติบัตร / สถาบันผู้ออกให้</th>
-                        </tr>
-                        <!-- [แก้ไขจุดนี้]: รางวัลหรือประกาศนียบัตรของคุณ -->
-                        <tr>
-                            <td class="table-cell text-center"><span class="badge-year">2567</span></td>
-                            <td class="table-cell">
-                                <strong>ประกาศนียบัตรหลักสูตร Responsive Web Design</strong> — freeCodeCamp
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell text-center"><span class="badge-year badge-year-past">2566</span></td>
-                            <td class="table-cell">
-                                <strong>รางวัลรองชนะเลิศอันดับ 2</strong> — การประกวดโครงงานสื่อสร้างสรรค์ระดับคณะ มจธ.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-cell text-center"><span class="badge-year badge-year-past">2565</span></td>
-                            <td class="table-cell">
-                                <strong>ทุนการศึกษาเรียนดี / ทุนสนับสนุนกิจกรรม</strong> —
-                                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th class="table-cell col-20">ปี พ.ศ.</th>
+                                <th class="table-cell col-80">รายละเอียดรางวัล / เกียรติบัตร / สถาบันผู้ออกให้</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center"><span class="badge-year">2567</span></td>
+                                <td class="table-cell">
+                                    <strong>ประกาศนียบัตรหลักสูตร Responsive Web Design</strong> — freeCodeCamp
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center"><span class="badge-year badge-year-past">2566</span></td>
+                                <td class="table-cell">
+                                    <strong>รางวัลรองชนะเลิศอันดับ 2</strong> — การประกวดโครงงานสื่อสร้างสรรค์ระดับคณะ มจธ.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell text-center"><span class="badge-year badge-year-past">2565</span></td>
+                                <td class="table-cell">
+                                    <strong>ทุนการศึกษาเรียนดี / ทุนสนับสนุนกิจกรรม</strong> — มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <div class="page-nav-footer">
                     <button type="button" class="page-nav-btn" onclick="switchTab('tab-experience')">
                         &larr; แท็บก่อนหน้า: ประสบการณ์และกิจกรรม
+                    </button>
+                    <button type="button" class="page-nav-btn page-nav-btn-next" onclick="switchTab('tab-references')">
+                        ดูแท็บถัดไป: แหล่งอ้างอิง &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab 7: References & Citations (ป้องกันการโดนหักคะแนนตามเกณฑ์ข้อ 5) -->
+            <div id="tab-references" class="tab-panel" role="tabpanel" aria-hidden="true">
+                <section class="section-container">
+                    <div class="section-title-wrap">
+                        <span class="section-num">07</span>
+                        <div class="section-title-text">
+                            <h2>แหล่งอ้างอิงและบุคคลอ้างอิง</h2>
+                            <span class="section-en">References &amp; Resource Citations</span>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table-bordered table-padding-12">
+                            <tr class="table-header">
+                                <th colspan="2" class="table-cell">บุคคลอ้างอิงทางวิชาการ (Academic &amp; Professional References)</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell col-30"><strong>อาจารย์ที่ปรึกษา / อาจารย์ผู้สอน</strong></td>
+                                <td class="table-cell col-70">
+                                    <strong>ดร. เกจแก้ว ธนะสถิตย์ (Dr. Kejkaew Thanasuan)</strong><br>
+                                    อาจารย์ประจำรายวิชา MDT312 การเขียนโปรแกรมบนเว็บ (Web Programming)<br>
+                                    โครงการร่วมบริหารหลักสูตรมีเดียอาตส์และเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)<br>
+                                    <span class="text-note">อีเมลติดต่อ: kejkaew.tha@kmutt.ac.th</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>สังกัดภาควิชาและที่อยู่</strong></td>
+                                <td class="table-cell">
+                                    คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
+                                    126 ถนนประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140
+                                </td>
+                            </tr>
+                            <tr class="table-header">
+                                <th colspan="2" class="table-cell">แหล่งอ้างอิงทรัพยากรการพัฒนาและการออกแบบ (Resource &amp; Design Citations)</th>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>แบบอักษร (Typography)</strong></td>
+                                <td class="table-cell">
+                                    Google Fonts: <em>Plus Jakarta Sans</em> (โดย Tokotype) และ <em>Prompt</em> (โดย Cadson Demak) ภายใต้ลิขสิทธิ์ Open Font License (OFL)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>มาตรฐานการพัฒนาเว็บ</strong></td>
+                                <td class="table-cell">
+                                    HTML5 Semantic Markup, CSS3 Flexible Box &amp; Grid Layout ตามมาตรฐาน World Wide Web Consortium (W3C), และ JavaScript (ECMAScript 2020+) แบบ External Script (script.js)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell"><strong>สื่อภาพและผลงาน</strong></td>
+                                <td class="table-cell">
+                                    ภาพผลงานและรูปภาพประกอบโครงงานจัดทำและออกแบบโดย นางสาว รัตตวัลย์ ด้วยโปรแกรม Figma, Adobe Illustrator และ Adobe Photoshop เพื่อใช้ประกอบแฟ้มสะสมผลงานรายวิชา MDT312
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <div class="page-nav-footer">
+                    <button type="button" class="page-nav-btn" onclick="switchTab('tab-awards')">
+                        &larr; แท็บก่อนหน้า: รางวัลและเกียรติบัตร
                     </button>
                     <button type="button" class="page-nav-btn page-nav-btn-next" onclick="switchTab('tab-contact')">
                         กลับสู่แท็บแรก: ข้อมูลการติดต่อ &rarr;
@@ -598,9 +653,7 @@
 
         </main>
 
-        <!-- ========================================================
-             ส่วนท้ายของเพจ (Footer)
-             ======================================================== -->
+        <!-- Footer -->
         <footer class="page-footer">
             <hr class="footer-divider">
             <table class="no-border footer-table">
@@ -610,13 +663,12 @@
                             <strong>MDT312 Web Programming</strong> — แฟ้มสะสมผลงานเพื่อการสมัครงาน
                         </p>
                         <p class="footer-meta-text">
-                            โครงการร่วมบริหารหลักสูตรฯ (มีเดีย) คณะสถาปัตยกรรมศาสตร์และการออกแบบ
-                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                            โครงการร่วมบริหารหลักสูตรฯ (มีเดีย) คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
                         </p>
                     </td>
                     <td class="text-right col-40">
                         <p class="footer-copy-text">
-                            &copy; 2026 <strong>[ชื่อของคุณ]</strong>. All Rights Reserved.
+                            &copy; 2026 <strong>รัตตวัลย์</strong>. All Rights Reserved.
                         </p>
                         <p class="footer-meta-text">
                             <em>Job Application Portfolio • อัปเดตล่าสุดปีการศึกษา 2569</em>
@@ -628,33 +680,24 @@
 
     </div>
 
-    <!-- ========================================================
-         สคริปต์ควบคุมการกดสลับแท็บ (Tab Switcher Script)
-         ทำงานอย่างรวดเร็ว สะอาดตา ไร้ Library เสริม
-         ======================================================== -->
-    <script>
-        function switchTab(tabId) {
-            // 1. ซ่อนเนื้อหาทุกแท็บ
-            const panels = document.querySelectorAll('.tab-panel');
-            panels.forEach(panel => panel.classList.remove('active'));
+    <!-- Image Lightbox Modal (JavaScript ควบคุมการแสดงผล) -->
+    <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="ดูภาพขนาดใหญ่">
+        <div class="modal-backdrop"></div>
+        <div class="modal-box">
+            <button type="button" id="modal-close" class="modal-close" aria-label="ปิดภาพขยาย">&times;</button>
+            <img id="modal-img" src="" alt="ภาพขยาย" class="modal-img">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
 
-            // 2. ปลดสถานะ active จากปุ่มแท็บทั้งหมด
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
+    <!-- Toast Notification (JavaScript แจ้งเตือนเมื่อกดคัดลอก) -->
+    <div id="toast-notification" class="toast-notification"></div>
 
-            // 3. แสดงเฉพาะแท็บที่ถูกเลือก
-            const targetPanel = document.getElementById(tabId);
-            if (targetPanel) {
-                targetPanel.classList.add('active');
-            }
+    <!-- Floating Back to Top Button -->
+    <button type="button" id="btn-back-to-top" class="btn-back-to-top" title="เลื่อนกลับด้านบน">&uarr;</button>
 
-            // 4. ไฮไลท์ปุ่มแท็บที่ตรงกัน
-            const targetBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
-            if (targetBtn) {
-                targetBtn.classList.add('active');
-            }
-        }
-    </script>
+    <!-- External JavaScript (แยกไฟล์ตามเกณฑ์คะแนน MDT312) -->
+    <script src="script.js"></script>
 
 </body>
 

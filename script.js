@@ -1,7 +1,7 @@
 /**
  * script.js - External JavaScript for Student Portfolio
  * วิชา: MDT312 Web Programming | มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
- * ผู้จัดทำ: นางสาว รัตตวัลย์ (รหัสนักศึกษา 65070501032)
+ * ผู้จัดทำ: นางสาว รัตตวัลย์ รัตนกรรภิรมย์ (รหัสนักศึกษา 67120501032)
  */
 
 document.addEventListener('DOMContentLoaded', () => {

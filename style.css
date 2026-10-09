@@ -282,9 +282,10 @@ body {
 
 .profile-img {
     width: 235px;
-    height: 235px;
+    height: 290px;
     object-fit: cover;
-    border-radius: 30px;
+    object-position: center top;
+    border-radius: 26px;
     display: block;
     cursor: zoom-in;
     transition: transform 0.25s ease;

@@ -1,0 +1,104 @@
+/* Body */
+
+body {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f1e8;
+    text-align: center;
+}
+
+
+/* Title */
+
+h1 {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #0c3782;
+    text-align: center;
+    background-color: #4576a8;
+    color: white;
+}
+
+
+/* Main Box */
+
+.box {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #77dd1d;
+    background-color: white;
+}
+
+
+/* Heading */
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #a1e731;
+}
+
+
+/* Ingredients */
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extra-list {
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+/* Ingredient Box */
+
+.ingredient {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #181717;
+    text-align: center;
+}
+
+
+/* Images */
+
+.ingredient img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Steps */
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Step Box */
+
+.step {
+    width: 40%;
+    height: 100px;
+    margin: 2px;
+    padding: 10px;
+    border: 2px solid #0c0c0c;
+}
+
+/* Source */
+
+.source {
+    margin: 30px;
+    text-align: center;
+}

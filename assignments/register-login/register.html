@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="register.js"></script>
+</head>
+
+<body>
+	<nav style="max-width: 480px; margin: 16px auto 0 auto; padding: 10px 16px; background: #ffffff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; font-family: sans-serif;">
+		<a href="../../index.html" style="color: #2563eb; text-decoration: none; font-weight: 600; font-size: 13px;">&larr; กลับสู่หน้า Portfolio (index.html)</a>
+		<span style="font-size: 12px; color: #64748b;">MDT312 Register</span>
+	</nav>
+	<form name="myRegister" id="myRegister" action="login.html" novalidate>
+		<fieldset>
+			<legend>Register</legend>
+			<span class="required-note">* require</span>
+			<div id="errormsg"></div>
+
+			<div class="form-group">
+				<label>First name*:</label>
+				<input type="text" name="firstname">
+			</div>
+
+			<div class="form-group">
+				<label>Last name*:</label>
+				<input type="text" name="lastname">
+			</div>
+
+			<div class="form-group">
+				<label>Gender*:</label>
+				<div class="radio-options">
+					<label class="radio-label"><input type="radio" name="gender" value="male"> Male</label>
+					<label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+					<label class="radio-label"><input type="radio" name="gender" value="other"> Other</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Birthday*:</label>
+				<input type="date" name="bday" value="">
+			</div>
+
+			<div class="form-group">
+				<label>Email address*:</label>
+				<input type="text" name="email">
+			</div>
+
+			<div class="form-group">
+				<label>Username*:</label>
+				<input type="text" name="username">
+			</div>
+
+			<div class="form-group">
+				<label>Password*:</label>
+				<input type="password" name="password">
+			</div>
+
+			<div class="form-group">
+				<label>Retype Password*:</label>
+				<input type="password" name="password">
+			</div>
+
+			<div class="btn-group">
+				<input type="submit" value="Register" id="registerBtn">
+				<input type="reset" value="Reset" id="resetBtn">
+			</div>
+
+			<div class="switch-page">
+				มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ (Login)</a>
+			</div>
+		</fieldset>
+	</form>
+</body>
+
+</html>

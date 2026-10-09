@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f7 0%, #dbe4ee 100%);
+    color: #2d3748;
+    margin: 0;
+    padding: 40px 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* กล่องการ์ดหลักของเว็บบอร์ด */
+.container {
+    width: 100%;
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* หัวข้อด้านบน (id="top") */
+h1#top {
+    color: #1a365d;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #edf2f7;
+    margin: 20px 0;
+}
+
+/* สไตล์กล่องโพสต์ Topic และ Reply */
+#topic,
+#reply1,
+#reply2 {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+/* ข้อความตัวอย่างเมื่อยังไม่มีการโพสต์ */
+#topic:empty::before {
+    content: " หัวข้อ (Topic) : ข้อความจะแสดงที่นี่...";
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+#reply1:empty::before {
+    content: " ความคิดเห็นที่ 1 (Reply 1) : ข้อความตอบกลับจะแสดงที่นี่...";
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+#reply2:empty::before {
+    content: " ความคิดเห็นที่ 2 (Reply 2) : ข้อความตอบกลับจะแสดงที่นี่...";
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* สไตล์เมื่อมีข้อความถูกโพสต์ลงในกล่อง */
+#topic:not(:empty) {
+    background-color: #ebf8ff;
+    border: 1px solid #bee3f8;
+    border-left: 6px solid #3182ce;
+    color: #2b6cb0;
+    font-weight: 500;
+}
+
+#reply1:not(:empty) {
+    background-color: #f0fff4;
+    border: 1px solid #c6f6d5;
+    border-left: 6px solid #38a169;
+    color: #276749;
+}
+
+#reply2:not(:empty) {
+    background-color: #fffaf0;
+    border: 1px solid #feebc8;
+    border-left: 6px solid #dd6b20;
+    color: #9c4221;
+}
+
+/* กล่องพิมพ์ข้อความ (textarea) */
+textarea#message {
+    width: 100%;
+    height: 95px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #cbd5e1;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    color: #334155;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea#message:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+textarea#message::placeholder {
+    color: #94a3b8;
+}
+
+/* ส่วนจัดวางปุ่มกด */
+.button-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ปุ่ม Post */
+.btn-post,
+button[onclick*="postFunction"] {
+    background-color: #3182ce;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(49, 130, 206, 0.2);
+}
+
+.btn-post:hover,
+button[onclick*="postFunction"]:hover {
+    background-color: #2b6cb0;
+}
+
+/* ปุ่ม Clear */
+.btn-clear,
+button[onclick*="clearFunction"] {
+    background-color: #e53e3e;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(229, 62, 62, 0.2);
+}
+
+.btn-clear:hover,
+button[onclick*="clearFunction"]:hover {
+    background-color: #c53030;
+}

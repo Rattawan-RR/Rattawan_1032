@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ผลงานและโครงงาน - Portfolio สมัครงาน นักศึกษาหลักสูตรเทคโนโลยีมีเดีย มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">
+    <meta name="keywords" content="Projects, Portfolio, Web Development, UI UX Design, MDT312, KMUTT">
+    <meta name="author" content="[ใส่ชื่อของคุณ]">
+    <title>ผลงานและโครงงาน | Portfolio - [ชื่อ-นามสกุลของคุณ]</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans และ Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ลิงก์เชื่อมโยงไปยังไฟล์ External CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- แถบเมนูนำทางระหว่างหน้า (Multi-Page Navigation Bar) -->
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ข้อมูลผู้สมัคร &amp; การศึกษา</a></li>
+                <li><a href="skills.html" class="nav-link">ทักษะความสามารถ</a></li>
+                <li><a href="projects.html" class="nav-link active">ผลงานและโครงงาน</a></li>
+                <li><a href="experience.html" class="nav-link">ประสบการณ์ &amp; รางวัล</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================================================
+             ส่วนหัวโปรไฟล์ (Header Section)
+             ======================================================== -->
+        <header class="header-card" id="about">
+            <table class="no-border table-padding-10">
+                <tr>
+                    <td class="col-30 text-center profile-cell">
+                        <div class="profile-frame">
+                            <img src="images/profile.jpg" alt="รูปถ่ายประจำตัวผู้สมัครงาน" class="profile-img">
+                        </div>
+                    </td>
+                    <td class="col-70 text-left header-content-cell">
+                        <div class="pill-group">
+                            <span class="pill-status"><span class="dot-indicator"></span> พร้อมเริ่มงาน / ฝึกงาน</span>
+                            <span class="pill-tag">MDT312 Portfolio</span>
+                        </div>
+
+                        <!-- [แก้ไขจุดนี้]: ใส่ชื่อ-นามสกุลของคุณ -->
+                        <h1 class="candidate-name">[ชื่อ - นามสกุลของคุณ]</h1>
+                        <h2 class="candidate-en">[Your Full Name in English]</h2>
+
+                        <div class="student-meta-box">
+                            <table class="no-border meta-table">
+                                <tr>
+                                    <td class="meta-label">รหัสนักศึกษา</td>
+                                    <td class="meta-value"><strong>65000000000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="meta-label">หลักสูตร / สาขา</td>
+                                    <td class="meta-value">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีมีเดีย (Media
+                                        Technology)</td>
+                                </tr>
+                                <tr>
+                                    <td class="meta-label">สถาบันการศึกษา</td>
+                                    <td class="meta-value">คณะสถาปัตยกรรมศาสตร์และการออกแบบ
+                                        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="objective-card">
+                            <div class="objective-header">
+                                <span class="label-bold">ตำแหน่งงานที่สนใจสมัคร:</span>
+                                <span class="chip-role">Front-End Developer</span>
+                                <span class="chip-role">UI/UX Designer</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+        <hr class="section-divider">
+
+        <!-- ========================================================
+             เนื้อหาหลักประจำหน้า: ผลงานและโครงงานที่โดดเด่น
+             ======================================================== -->
+        <main>
+
+            <section class="section-container" id="projects">
+                <div class="section-title-wrap">
+                    <span class="section-num">04</span>
+                    <div class="section-title-text">
+                        <h2>ผลงานและโครงงานที่โดดเด่น</h2>
+                        <span class="section-en">Featured Projects &amp; Selected Works</span>
+                    </div>
+                </div>
+
+                <table class="table-bordered table-padding-12">
+                    <tr class="table-header">
+                        <th class="table-cell col-35">ตัวอย่างภาพผลงาน</th>
+                        <th class="table-cell col-65">รายละเอียดโปรเจกต์และหน้าที่ความรับผิดชอบ</th>
+                    </tr>
+
+                    <!-- โปรเจกต์ที่ 1 -->
+                    <tr>
+                        <td class="table-cell text-center project-cell">
+                            <div class="img-frame">
+                                <img src="images/project1.jpg" alt="ภาพตัวอย่างโครงงาน Web Dashboard"
+                                    class="project-img">
+                            </div>
+                        </td>
+                        <td class="table-cell">
+                            <div class="project-header-bar">
+                                <h3 class="project-title">1. Cybernetics - Interactive Analytics Dashboard</h3>
+                                <span class="badge-project-type">Web Development</span>
+                            </div>
+                            <p class="project-tech-meta">
+                                <strong>เทคโนโลยีที่ใช้:</strong> HTML5, CSS3, JavaScript, Chart.js, Responsive Layout
+                            </p>
+                            <p class="project-desc">
+                                โครงงานพัฒนาเว็บแอปพลิเคชันแดชบอร์ดสำหรับการนำเสนอและวิเคราะห์ข้อมูลเชิงภาพ
+                                มีฟังก์ชันโต้ตอบ เช่น การสลับช่วงเวลา และจัด Layout
+                                ให้แสดงผลได้อย่างสมบูรณ์บนทุกขนาดหน้าจอ
+                            </p>
+                            <ul class="clean-bullet-list">
+                                <li><strong>บทบาทหน้าที่:</strong> ออกแบบ UI บน Figma และพัฒนาโค้ดหน้าเว็บด้วย Semantic
+                                    HTML และ External CSS</li>
+                                <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
+                                        class="link-inline">ดูตัวอย่างเว็บไซต์ (Live Demo)</a> | <a href="#"
+                                        target="_blank" class="link-inline">ซอร์สโค้ด (GitHub)</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- โปรเจกต์ที่ 2 -->
+                    <tr>
+                        <td class="table-cell text-center project-cell">
+                            <div class="img-frame">
+                                <img src="images/project2.jpg" alt="ภาพตัวอย่างโครงงาน UI/UX Application"
+                                    class="project-img">
+                            </div>
+                        </td>
+                        <td class="table-cell">
+                            <div class="project-header-bar">
+                                <h3 class="project-title">2. VIBE - Creative Audio &amp; Media Discovery App</h3>
+                                <span class="badge-project-type">UI/UX Case Study</span>
+                            </div>
+                            <p class="project-tech-meta">
+                                <strong>เครื่องมือที่ใช้:</strong> Figma, Design System, User Persona, Interactive
+                                Prototyping
+                            </p>
+                            <p class="project-desc">
+                                กรณีศึกษาการวิจัยและออกแบบประสบการณ์ผู้ใช้ (UX/UI)
+                                สำหรับแอปพลิเคชันค้นหาสื่อเสียงสร้างสรรค์ โดยเน้นการจัดวางตามหลัก Human-Computer
+                                Interaction เพื่อความง่ายและลื่นไหลในการใช้งาน
+                            </p>
+                            <ul class="clean-bullet-list">
+                                <li><strong>บทบาทหน้าที่:</strong> ค้นคว้าความต้องการของผู้ใช้ วางโครงร่าง Wireframe
+                                    และสร้าง Interactive Prototype</li>
+                                <li><strong>การเข้าชมผลงาน:</strong> <a href="#" target="_blank"
+                                        class="link-inline">เปิดดู Prototype บน Figma</a> | <a href="#" target="_blank"
+                                        class="link-inline">เอกสารสรุปผลวิจัย</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- โปรเจกต์ที่ 3 (วิชา MDT312) -->
+                    <tr>
+                        <td class="table-cell text-center project-cell">
+                            <div class="project-empty-frame">
+                                <span class="empty-title">Project Preview</span>
+                                <span class="empty-note">ภาพตัวอย่างโครงงานวิชา MDT312</span>
+                                <small class="text-note">(สามารถเพิ่มรูปภาพใน images/)</small>
+                            </div>
+                        </td>
+                        <td class="table-cell">
+                            <div class="project-header-bar">
+                                <h3 class="project-title">3. Student Portfolio Web Page (MDT312 Project)</h3>
+                                <span class="badge-project-type">Academic Assignment</span>
+                            </div>
+                            <p class="project-tech-meta">
+                                <strong>เทคโนโลยีที่ใช้:</strong> Semantic HTML5, External CSS, Responsive Design, CSS
+                                Flexbox/Grid
+                            </p>
+                            <p class="project-desc">
+                                การพัฒนาเว็บไซต์แฟ้มสะสมผลงานส่วนบุคคลเพื่อการสมัครงานตามข้อกำหนดของรายวิชา
+                                โดยเน้นการจัดโครงสร้างแบบ Semantic Markup และการจัดการสไตล์ผ่าน External CSS
+                            </p>
+                            <ul class="clean-bullet-list">
+                                <li><strong>บทบาทหน้าที่:</strong> ผู้พัฒนาหลัก ออกแบบและเขียนโค้ด HTML/CSS ด้วยตนเอง
+                                </li>
+                                <li><strong>การเข้าชมผลงาน:</strong> <a
+                                        href="https://yourusername.github.io/portfolio-mdt312/" target="_blank"
+                                        class="link-inline">GitHub Pages Repository</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- แถบปุ่มเปลี่ยนหน้าด้านล่าง (Bottom Page Navigation) -->
+            <div class="page-nav-footer">
+                <a href="skills.html" class="page-nav-btn">
+                    &larr; หน้าก่อนหน้า: ทักษะความสามารถ
+                </a>
+                <a href="experience.html" class="page-nav-btn page-nav-btn-next">
+                    หน้าถัดไป: ประสบการณ์ &amp; รางวัล &rarr;
+                </a>
+            </div>
+
+        </main>
+
+        <!-- ส่วนท้ายของเพจ (Footer) -->
+        <footer class="page-footer">
+            <hr class="footer-divider">
+            <table class="no-border footer-table">
+                <tr>
+                    <td class="text-left col-60">
+                        <p class="footer-main-title">
+                            <strong>MDT312 Web Programming</strong> — แฟ้มสะสมผลงานเพื่อการสมัครงาน
+                        </p>
+                        <p class="footer-meta-text">
+                            โครงการร่วมบริหารหลักสูตรฯ (มีเดีย) คณะสถาปัตยกรรมศาสตร์และการออกแบบ
+                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        </p>
+                    </td>
+                    <td class="text-right col-40">
+                        <p class="footer-copy-text">
+                            &copy; 2026 <strong>[ชื่อของคุณ]</strong>. All Rights Reserved.
+                        </p>
+                        <p class="footer-meta-text">
+                            <em>Job Application Portfolio • อัปเดตล่าสุดปีการศึกษา 2569</em>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,825 @@
+/* ==========================================================================
+   style.css - External Stylesheet for Student Portfolio
+   สไตล์: Modern Warm Minimalist (เทรนด์ยอดนิยม คลีน อบอุ่น สุภาพ ไร้อิโมจิ)
+   วิชา: MDT312 Web Programming | มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ตัวแปรโทนสีและระบบดีไซน์ (Design Tokens & Color Palette)
+   ใช้คู่สีเอิร์ธโทนผสมมินิมอลโมเดิร์น ให้ความรู้สึกน่ารัก สบายตา แต่ทรงคุณค่าและเป็นทางการ
+   -------------------------------------------------------------------------- */
+:root {
+    /* โทนสีหลักสำหรับข้อความและความน่าเชื่อถือ */
+    --color-text-main: #22262f;       /* สีชาร์โคลเข้ม คมชัด อ่านง่ายมาก */
+    --color-text-body: #374151;       /* สีข้อความเนื้อหา */
+    --color-text-sub: #6b7280;        /* สีข้อความรอง / วันที่ */
+    --color-text-light: #9ca3af;      /* สีข้อความคำอธิบายขนาดเล็ก */
+    
+    /* โทนสีหัวตารางและส่วนสำคัญ */
+    --color-header-bg: #2b3342;       /* สีกรมท่าชาร์โคล สุภาพ เหมาะกับงานวิชาการ */
+    --color-accent-terracotta: #c45b4c; /* สีเทอราคอตตาอบอุ่น ใช้เน้นจุดสำคัญ */
+    --color-accent-sage: #4f7762;     /* สีเขียวเซจสุภาพ */
+    
+    /* สีพื้นหลังและคอนเทนเนอร์ */
+    --bg-page: #fbf9f5;              /* สีพื้นหลังหน้าเว็บโทนงาช้าง/ครีมกระดาษ */
+    --bg-container: #ffffff;         /* สีพื้นหลังคอนเทนเนอร์สีขาว */
+    --bg-surface-subtle: #f9f7f3;    /* สีพื้นผิวชั้นรอง */
+    
+    /* สีเส้นขอบ */
+    --border-main: #e8e2d8;          /* สีเส้นขอบหลัก */
+    --border-subtle: #f0ebe2;        /* สีเส้นขอบบาง */
+    --table-zebra: #fdfcfa;          /* สีแถวตารางสลับเพื่อความสบายตา */
+    --table-hover: #f7f3ec;          /* สีไฮไลท์แถวตารางเมื่อเลื่อนเมาส์ผ่าน */
+    
+    /* ความโค้งมนตามเทรนด์โมเดิร์น */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 9999px;
+    
+    /* เงาสุภาพ นุ่มนวล */
+    --shadow-main: 0 10px 30px -8px rgba(80, 70, 60, 0.06), 0 2px 6px -2px rgba(80, 70, 60, 0.03);
+    --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   2. การตั้งค่าพื้นฐาน (Base Page Setup)
+   -------------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-page);
+    /* ลวดลาย Dot Pattern จาง ๆ ที่กำลังเป็นที่นิยมในเว็บพอร์ตโฟลิโอสมัยใหม่ */
+    background-image: radial-gradient(#e8e0d4 0.85px, transparent 0.85px);
+    background-size: 18px 18px;
+    font-family: 'Prompt', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--color-text-body);
+    line-height: 1.65;
+    margin: 0;
+    padding: 32px 16px;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------------------------------
+   3. คอนเทนเนอร์หลัก (Main Container Card)
+   คงโครงสร้าง 85-88% ตามเกณฑ์ของอาจารย์ พร้อมขอบมนและมิติที่ประณีต
+   -------------------------------------------------------------------------- */
+.container {
+    width: 88%;
+    max-width: 1040px;
+    margin: 0 auto;
+    background-color: var(--bg-container);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-main);
+    padding: 38px 46px;
+    border: 1.5px solid var(--border-main);
+}
+
+/* --------------------------------------------------------------------------
+   4. แถบแท็บสลับข้อมูล (Interactive Tab Navigation Bar)
+   กดสลับแถบเพื่อดูข้อมูลต่าง ๆ ได้ทันทีในหน้าเดียวอย่างลื่นไหล
+   -------------------------------------------------------------------------- */
+.tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-surface-subtle);
+    border: 1px solid var(--border-main);
+    border-radius: var(--radius-pill);
+    padding: 6px;
+    margin: 20px 0 24px 0;
+}
+
+.tab-btn {
+    flex: 1 1 auto;
+    background-color: transparent;
+    color: var(--color-text-sub);
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-family: 'Prompt', 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: var(--color-text-main);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-btn.active {
+    background-color: var(--color-header-bg);
+    color: #ffffff !important;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(43, 51, 66, 0.16);
+}
+
+/* แผงเนื้อหาประจำแท็บ (Tab Content Panels) */
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeInTab 0.28s ease;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* แถบปุ่มนำทางเปลี่ยนแถบด้านล่าง (Bottom Tab Switcher Buttons) */
+.page-nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.page-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-main) !important;
+    border: 1px solid var(--border-main);
+    border-radius: var(--radius-pill);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Prompt', sans-serif;
+}
+
+.page-nav-btn:hover {
+    background-color: #ffffff;
+    border-color: var(--color-accent-terracotta);
+    color: var(--color-accent-terracotta) !important;
+    box-shadow: var(--shadow-card);
+}
+
+.page-nav-btn-next {
+    margin-left: auto;
+}
+
+/* --------------------------------------------------------------------------
+   5. ส่วนหัวโปรไฟล์ผู้สมัคร (Header & Hero Profile Section)
+   -------------------------------------------------------------------------- */
+.header-card {
+    padding-bottom: 8px;
+}
+
+/* แถบหัวเรื่อง PORTFOLIO ด้านบนสุด */
+.portfolio-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid var(--border-subtle);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.portfolio-main-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 22pt;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--color-header-bg);
+    line-height: 1;
+    margin: 0;
+}
+
+.portfolio-sub-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-sub);
+    letter-spacing: 0.5px;
+}
+
+/* กรอบรูปภาพโปรไฟล์ทรงมนขนาดใหญ่ ชัดเจน (Large Squircle Frame) */
+.profile-frame {
+    display: inline-block;
+    padding: 6px;
+    background-color: #ffffff;
+    border: 2px solid var(--border-main);
+    border-radius: 36px;
+    box-shadow: 0 8px 24px rgba(70, 60, 50, 0.1);
+}
+
+.profile-img {
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+
+/* ป้ายสถานะทรงแคปซูล */
+.pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.pill-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f1f7f3;
+    color: var(--color-accent-sage);
+    border: 1px solid #d2e4d9;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dot-indicator {
+    width: 7px;
+    height: 7px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pill-tag {
+    display: inline-block;
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-sub);
+    border: 1px solid var(--border-subtle);
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* ชื่อ-นามสกุล */
+h1.candidate-name {
+    font-size: 26pt;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 2px 0 2px 0;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+h2.candidate-en {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5pt;
+    font-weight: 500;
+    color: var(--color-text-sub);
+    margin: 0 0 14px 0;
+}
+
+/* ตารางข้อมูลนักศึกษา */
+.student-meta-box {
+    margin-bottom: 12px;
+    background-color: var(--bg-surface-subtle);
+    border: 1px solid var(--border-main);
+    border-radius: var(--radius-md);
+    padding: 8px 12px;
+}
+
+.meta-table td {
+    padding: 2.5px 6px !important;
+    font-size: 13px;
+}
+
+.meta-label {
+    width: 110px;
+    color: var(--color-text-sub);
+    font-weight: 500;
+}
+
+.meta-value {
+    color: var(--color-text-main);
+}
+
+/* กล่องเป้าหมายการทำงาน (Objective Card) */
+.objective-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-main);
+    border-left: 3.5px solid var(--color-accent-terracotta);
+    padding: 11px 14px;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin-top: 10px;
+}
+
+.objective-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13.5px;
+    margin-bottom: 5px;
+}
+
+.label-bold {
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.chip-role {
+    background-color: #fcf1ef;
+    color: var(--color-accent-terracotta);
+    border: 1px solid #f6d8d3;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+}
+
+.objective-text {
+    font-size: 13px;
+    color: var(--color-text-body);
+    margin: 0;
+    line-height: 1.58;
+}
+
+/* --------------------------------------------------------------------------
+   6. เส้นแบ่งและหัวข้อประจำแต่ละส่วน (Section Dividers & Headers)
+   -------------------------------------------------------------------------- */
+hr.section-divider {
+    height: 1px;
+    background-color: var(--border-subtle);
+    border: none;
+    margin: 28px 0 24px 0;
+}
+
+.section-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.section-num {
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-main);
+    border: 1px solid var(--border-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+}
+
+.section-title-text h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin: 0;
+    line-height: 1.25;
+}
+
+.section-en {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: block;
+}
+
+/* --------------------------------------------------------------------------
+   7. รูปแบบตารางตามเกณฑ์วิชา MDT312 (Table Styling)
+   -------------------------------------------------------------------------- */
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-top: 4px;
+}
+
+/* Paddings ตามสไตล์ชีตเดิมของอาจารย์ */
+.table-padding-30 th, .table-padding-30 td { padding: 22px; }
+.table-padding-12 th, .table-padding-12 td { padding: 11px 14px; }
+.table-padding-10 th, .table-padding-10 td { padding: 8px 10px; }
+
+/* ตารางแบบมีขอบ */
+.table-bordered {
+    border: 1px solid var(--border-main);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* แถวหัวตาราง (Table Header) โทนสีกรมท่าชาร์โคลสุภาพ เรียบร้อย */
+.table-header {
+    background-color: var(--color-header-bg);
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.table-header th {
+    border: 1px solid var(--color-header-bg);
+    padding: 10px 14px;
+    text-align: left;
+}
+
+/* เซลล์เนื้อหาตาราง (Table Cells) */
+.table-cell {
+    border: 1px solid var(--border-main);
+    font-size: 13.5px;
+    vertical-align: top;
+    color: var(--color-text-body);
+    line-height: 1.6;
+}
+
+/* สลับสีแถวตารางให้อ่านง่าย สบายตา */
+.table-bordered tbody tr:nth-child(even):not(.table-header) {
+    background-color: var(--table-zebra);
+}
+
+/* ไฮไลท์เมื่อเลื่อนเมาส์ชี้แถว */
+.table-bordered tbody tr:hover:not(.table-header) {
+    background-color: var(--table-hover);
+}
+
+/* ตารางแบบไม่มีขอบ (สำหรับ Header และ Footer) */
+.no-border, .no-border tr, .no-border td, .no-border th {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. ตัวช่วยกำหนดความกว้างคอลัมน์ (Column Width Helpers)
+   -------------------------------------------------------------------------- */
+.col-15 { width: 15%; }
+.col-20 { width: 20%; }
+.col-25 { width: 25%; }
+.col-30 { width: 30%; }
+.col-35 { width: 35%; }
+.col-40 { width: 40%; }
+.col-45 { width: 45%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-65 { width: 65%; }
+.col-70 { width: 70%; }
+.col-75 { width: 75%; }
+.col-80 { width: 80%; }
+.col-85 { width: 85%; }
+
+/* จัดตำแหน่งข้อความ */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-note   { font-size: 11.5px; color: var(--color-text-sub); }
+
+/* --------------------------------------------------------------------------
+   9. ลิงก์และปุ่มติดต่อ (Links & Actions)
+   -------------------------------------------------------------------------- */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent-terracotta);
+    text-decoration: underline;
+}
+
+.link-contact {
+    color: var(--color-text-main);
+    font-weight: 500;
+}
+
+.link-contact:hover {
+    color: var(--color-accent-terracotta);
+    text-decoration: underline;
+}
+
+.link-inline {
+    font-weight: 500;
+}
+
+/* ปุ่มลิงก์ในตารางการติดต่อ */
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 4px;
+}
+
+.btn-action {
+    display: inline-block;
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-body) !important;
+    border: 1px solid var(--border-main);
+    padding: 3px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    color: var(--color-text-main) !important;
+    box-shadow: var(--shadow-card);
+}
+
+/* --------------------------------------------------------------------------
+   10. ป้ายและแท็กทักษะ (Badges & Skill Tags)
+   -------------------------------------------------------------------------- */
+.badge-year {
+    display: inline-block;
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-main);
+    border: 1px solid var(--border-main);
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+}
+
+.badge-year-past {
+    color: var(--color-text-sub);
+    border-color: var(--border-subtle);
+}
+
+.tag-gpax {
+    display: inline-block;
+    background-color: #fdf6ed;
+    color: #9a4c0a;
+    border: 1px solid #fedbb0;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    margin: 3px 0;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-1px);
+}
+
+.skill-tag-warm {
+    background-color: #fbf2ee;
+    color: #8c3b2d;
+    border: 1px solid #f2dbd1;
+}
+
+.skill-tag-sage {
+    background-color: #f1f6f3;
+    color: #2d5b43;
+    border: 1px solid #d5e5dc;
+}
+
+.skill-tag-neutral {
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-body);
+    border: 1px solid var(--border-main);
+}
+
+.clean-bullet-list {
+    margin: 5px 0 2px 0;
+    padding-left: 18px;
+    font-size: 13px;
+    color: var(--color-text-sub);
+}
+
+.clean-bullet-list li {
+    margin-bottom: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   11. ส่วนโครงงานและผลงาน (Project Showcase)
+   -------------------------------------------------------------------------- */
+.project-cell {
+    background-color: #faf8f5;
+    vertical-align: middle;
+}
+
+.img-frame {
+    display: inline-block;
+    border: 1px solid var(--border-main);
+    border-radius: var(--radius-md);
+    padding: 3px;
+    background-color: #ffffff;
+    box-shadow: var(--shadow-card);
+}
+
+.project-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.project-empty-frame {
+    width: 100%;
+    max-width: 250px;
+    height: 125px;
+    border: 1.5px dashed var(--border-main);
+    border-radius: var(--radius-md);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--color-text-sub);
+}
+
+.empty-title {
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 2px;
+}
+
+.empty-note {
+    font-size: 11px;
+}
+
+.project-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+h3.project-title {
+    font-size: 13.5pt;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin: 0;
+}
+
+.badge-project-type {
+    background-color: var(--bg-surface-subtle);
+    color: var(--color-text-main);
+    border: 1px solid var(--border-main);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+}
+
+.project-tech-meta {
+    font-size: 12.5px;
+    color: var(--color-accent-terracotta);
+    margin: 3px 0 6px 0;
+}
+
+.project-desc {
+    font-size: 13px;
+    color: var(--color-text-body);
+    margin: 0 0 6px 0;
+    line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   12. ส่วนท้ายเอกสาร (Footer)
+   -------------------------------------------------------------------------- */
+.page-footer {
+    margin-top: 36px;
+}
+
+.footer-divider {
+    height: 1.5px;
+    background-color: var(--border-main);
+    border: none;
+    margin-bottom: 14px;
+}
+
+.footer-main-title {
+    font-size: 13px;
+    color: var(--color-text-main);
+    margin: 0;
+}
+
+.footer-copy-text {
+    font-size: 13px;
+    color: var(--color-text-body);
+    margin: 0;
+}
+
+.footer-meta-text {
+    font-size: 12px;
+    color: var(--color-text-sub);
+    margin: 2px 0 0 0;
+}
+
+/* --------------------------------------------------------------------------
+   13. รองรับการแสดงผลบนอุปกรณ์เคลื่อนที่ (Responsive Design)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 14px;
+        border-radius: var(--radius-md);
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    /* สลับตารางส่วนหัวให้เรียงแนวดิ่งบนจอมือถือ */
+    .header-card table tr,
+    .header-card table td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .header-content-cell {
+        margin-top: 15px;
+    }
+
+    .pill-group {
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 190px;
+        height: 190px;
+        margin: 0 auto;
+    }
+
+    .meta-table td {
+        text-align: left !important;
+    }
+
+    .objective-header {
+        justify-content: center;
+    }
+
+    .objective-text {
+        text-align: left;
+    }
+
+    /* Footer บนจอมือถือ */
+    .footer-table tr,
+    .footer-table td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+}
